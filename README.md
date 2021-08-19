@@ -1,4 +1,4 @@
-### COMP2772
+# COMP2772
 
 ### Jim Labilles, Cody Slattery, Richard Stone, Illia Sheshyn 
 
