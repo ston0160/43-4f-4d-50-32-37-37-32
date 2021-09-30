@@ -1,0 +1,79 @@
+
+
+body {
+    background-color: grey;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    float: left;
+    width: 33%;
+}
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input, select {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+.customerInfo {
+    margin: 20px;
+}
+
+#shipping, #billing, #total{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#billing {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+
+#total {
+    position: absolute;
+    top: 20px;
+    left: 770px;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: #045bf0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0945e5;
+}
