@@ -28,7 +28,7 @@ FOREIGN KEY (custID) REFERENCES Customer(custID)
 );
 
 CREATE TABLE Product (
-prodID			INT(5) NOT NULL AUTO_INCREMENT,
+prodID			INT(5) NOT NULL,
 prodName		VARCHAR(20),
 price			FLOAT(5,2),
 quantity		INT(5),
@@ -62,7 +62,6 @@ FOREIGN KEY (custID, orderID) REFERENCES PurchaseOrder(custID, orderID)
 );
 
 ALTER TABLE Customer AUTO_INCREMENT=1;
-ALTER TABLE Product AUTO_INCREMENT=1;
 ALTER TABLE PurchaseOrder AUTO_INCREMENT=1;
 
 CREATE user IF NOT EXISTS dbadmin@localhost;
@@ -73,4 +72,16 @@ GRANT all privileges ON starwars.ProductImage TO dbadmin@localhost;
 GRANT all privileges ON starwars.PurchaseOrder TO dbadmin@localhost;
 GRANT all privileges ON starwars.PurchasedProduct TO dbadmin@localhost;
 
+INSERT INTO Product VALUES (1, "Yoda", 99.99, 5, "Green, I am.");
+INSERT INTO Product VALUES (2, "Luke Skywalker", 79.99, 2, "I am a Jedi.");
+INSERT INTO Product VALUES (3, "Rey", 89.99, 4, "I am a better Jedi.");
 
+INSERT INTO ProductImage VALUES (1, "images/Yoda1.jpg");
+INSERT INTO ProductImage VALUES (1, "images/Yoda2.jpg");
+INSERT INTO ProductImage VALUES (1, "images/Yoda3.jpg");
+INSERT INTO ProductImage VALUES (2, "images/LukeSkywalker1.jpg");
+INSERT INTO ProductImage VALUES (2, "images/LukeSkywalker2.jpg");
+INSERT INTO ProductImage VALUES (2, "images/LukeSkywalker3.jpg");
+INSERT INTO ProductImage VALUES (3, "images/Rey1.jpg");
+INSERT INTO ProductImage VALUES (3, "images/Rey2.jpg");
+INSERT INTO ProductImage VALUES (3, "images/Rey3.jpg");
