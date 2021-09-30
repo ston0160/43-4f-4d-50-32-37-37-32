@@ -33,14 +33,14 @@
     <!-- MENU BUTTONS & LOGO -->
     <!-- CART BUTTON -->
     <span class="addToCart">
-      <a href="#" class="addToCart-Link">
+      <a href="" class="addToCart-Link">
         <span><b class="fas fa-shopping-cart"></b> Cart</span>
         <span class="badge">3</span>
       </a>
     </span>
     <!-- LOGO IMAGE -->
     <span class="header-logo"
-      ><a href="index.html"><img src="images/logo_250x100.png" alt="logo" /></a
+      ><a href="index.php"><img src="images/logo_250x100.png" alt="logo" /></a
     ></span>
     <!-- MENU BUTTON -->
     <button class="menubtn" onclick="openNav()">☰ Menu</button>
