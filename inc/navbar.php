@@ -1,4 +1,3 @@
-<?php
 <!-- HEADER NAVBAR -->
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -31,4 +30,3 @@
         document.getElementById("main").style.marginLeft = "0";
       }
     </script>
-?>
