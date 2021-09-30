@@ -5,9 +5,15 @@
     <meta charset="UTF-8"/>
     <meta name="author" content=""/>
     <link rel="stylesheet" href="styles/checkoutStyle.css">
+    <link rel="stylesheet" href="styles/header-style.css">
     <script src="" defer></script>
   </head>
   <body>
+      <?php 
+      require_once "inc/navbar.php"
+      ?>
+      <div style="height: 100px"></div>
+      <div class="belowHeader">
     <div class="customerInfo">
         <div id="shipping">
         <h1>Shipping</h1>
@@ -101,6 +107,6 @@
         <p>GST: </p>
         <p>Total: </p>
     </div>
-    
+    </div>
   </body>
 </html>
