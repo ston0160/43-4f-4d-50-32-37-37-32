@@ -6,7 +6,7 @@ CREATE DATABASE starwars;
 USE starwars;
 
 CREATE TABLE Customer (
-custID			INT(5) NOT NULL,
+custID			INT(5) NOT NULL AUTO_INCREMENT,
 fName			VARCHAR(20),
 lName			VARCHAR(20),
 address			VARCHAR(45),
@@ -15,7 +15,7 @@ postCode		VARCHAR(4),
 region			VARCHAR(3),
 email			VARCHAR(50),
 PRIMARY KEY (custID)
-);
+); 
 
 CREATE TABLE CreditCard (
 custID			INT(5) NOT NULL,
@@ -28,7 +28,7 @@ FOREIGN KEY (custID) REFERENCES Customer(custID)
 );
 
 CREATE TABLE Product (
-prodID			INT(5) NOT NULL,
+prodID			INT(5) NOT NULL AUTO_INCREMENT,
 prodName		VARCHAR(20),
 price			FLOAT(5,2),
 quantity		INT(5),
@@ -45,10 +45,10 @@ FOREIGN KEY (prodID) REFERENCES Product(prodID)
 
 CREATE TABLE PurchaseOrder (
 custID			INT(5) NOT NULL,
-orderID			INT(5) NOT NULL,
+orderID			INT(5) NOT NULL AUTO_INCREMENT,
 orderedProduct	INT(5),
 totalPrice		FLOAT(5,2),
-PRIMARY KEY (custID, orderID),
+PRIMARY KEY (orderID),
 FOREIGN KEY (custID) REFERENCES Customer(custID)
 );
 
@@ -60,6 +60,10 @@ quantity		INT(5),
 PRIMARY KEY (custID, orderID, orderedProduct),
 FOREIGN KEY (custID, orderID) REFERENCES PurchaseOrder(custID, orderID)
 );
+
+ALTER TABLE Customer AUTO_INCREMENT=1;
+ALTER TABLE Product AUTO_INCREMENT=1;
+ALTER TABLE PurchaseOrder AUTO_INCREMENT=1;
 
 CREATE user IF NOT EXISTS dbadmin@localhost;
 GRANT all privileges ON starwars.Customer TO dbadmin@localhost;
