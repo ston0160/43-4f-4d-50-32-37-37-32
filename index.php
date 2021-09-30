@@ -29,17 +29,17 @@
       function newBannerJedi() {
         let x = document.getElementById("banner-homepage");
         x.style.backgroundImage =
-          "url('../images/banner-jedi-concil-2415x1200.png')";
+          "url('images/banner-jedi-concil-2415x1200.png')";
       }
       function newBannerEmpire() {
         let x = document.getElementById("banner-homepage");
         x.style.backgroundImage =
-          "url('../images/banner-sith-empire-2415x1200.png')";
+          "url('images/banner-sith-empire-2415x1200.png')";
       }
       function oldBanner() {
         let x = document.getElementById("banner-homepage");
         x.style.backgroundImage =
-          "url('../images/banner-homepage-2415x1200.png')";
+          "url('images/banner-homepage-2415x1200.png')";
       }
     </script>
 
