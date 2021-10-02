@@ -108,7 +108,7 @@
                             </div>
                             <label for="cvv">CVV</label>
                             <input type="text" id="cvv" name="cvv" placeholder="xxx" required>
-                            <button id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+
                         </div>
                     </div>
                 </form>
@@ -118,16 +118,17 @@
         <div class="column-25vh">
             <div class="container">
                 <h4>ORDER SUMMARY
-                    <span class="price" style="color:black">
+                    <span class="price" style="color:white; font-size: 20px;">
                         <i class="fa fa-shopping-cart"></i>
                         <b>4</b>
                     </span>
                 </h4>
-                <p><a href="#">Sub-total</a> <span class="price">$15</span></p>
-                <p><a href="#">GST</a> <span class="price">$5</span></p>
-                <p><a href="#">Shipping Cost</a> <span class="price">$8</span></p>
+                <p><a class="order-summary" href="#">Sub-total</a> <span class="price">$15</span></p>
+                <p><a class="order-summary" href="#">GST</a> <span class="price">$5</span></p>
+                <p><a class="order-summary" href="#">Shipping Cost</a> <span class="price">$8</span></p>
                 <hr>
-                <p>Total Price <span class="price" style="color:black"><b>$30</b></span></p>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$30</b></span></p>
+                <button id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
             </div>
         </div>
     </div>
