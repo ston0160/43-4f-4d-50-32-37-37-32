@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <div class="headergap"></div>
+    <!-- <div class="headergap"></div> -->
     <?php
     require_once "inc/navbar.php"
     ?>
 
     <div class="checkout-banner">
-        <h1>Checkout Your Items</h1>
+        <h1>Ready to Checkout Your Items?</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
     </div>
     <div class="row-main">
@@ -30,18 +30,18 @@
                     <div class="row-inner">
                         <div class="column-50vh">
                             <h3>Your Shipping Details</h3>
-                            <label for="fname"> Full Name</label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Scott Morrison" required>
-                            <label for="email"> Email</label>
-                            <input type="text" id="email" name="email" placeholder="scott@yourpm.com" required>
-                            <label for="adr"> Address</label>
-                            <input type="text" id="address" name="address" placeholder="101 Parliament House" required>
-                            <label for="suburb"> Suburb</label>
-                            <input type="text" id="suburb" name="suburb" placeholder="Canberra" required>
+                            <label class="details" for="fname"> Full Name</label>
+                            <input class="details" type="text" id="firstname" name="firstname" placeholder="Scott Morrison" required>
+                            <label class="details" for="email"> Email</label>
+                            <input class="details" type="text" id="email" name="email" placeholder="scott@yourpm.com" required>
+                            <label class="details" for="adr"> Address</label>
+                            <input class="details" type="text" id="address" name="address" placeholder="101 Parliament House" required>
+                            <label class="details" for="suburb"> Suburb</label>
+                            <input class="details" type="text" id="suburb" name="suburb" placeholder="Canberra" required>
 
                             <div class="row-inner">
                                 <div class="column-50vh">
-                                    <label for="state">State</label>
+                                    <label class="details" for="state">State</label>
                                     <select id="state" name="state" required default="South Australia" required>
                                         <option disabled selected value></option>
                                         <option selected="selected" value="ACT">Australian Capital Territory</option>
@@ -55,8 +55,8 @@
                                     </select>
                                 </div>
                                 <div class="column-50vh">
-                                    <label for="postcode">Post Code</label>
-                                    <input type="text" id="postcode" name="postcode" placeholder="2601" required>
+                                    <label class="details" for="postcode">Post Code</label>
+                                    <input class="details" type="text" id="postcode" name="postcode" placeholder="2601" required>
                                 </div>
                             </div>
                         </div>
@@ -64,15 +64,15 @@
                         <div class="column-50vh">
                             <h3>Payment</h3>
 
-                            <label for="cardname">Name on Card</label>
-                            <input type="text" id="cardname" name="cardname" placeholder="Scott Morrison" required>
-                            <label for="cardNo">Credit card number</label>
-                            <input type="text" id="cardNo" name="cardNo" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                            <label class="details" for="cardname">Name on Card</label>
+                            <input class="details" type="text" id="cardname" name="cardname" placeholder="Scott Morrison" required>
+                            <label class="details" for="cardNo">Credit card number</label>
+                            <input class="details" type="text" id="cardNo" name="cardNo" placeholder="xxxx-xxxx-xxxx-xxxx" required>
 
 
                             <div class="row-inner">
                                 <div class="column-50vh">
-                                    <label for="valid">Valid Until: </label>
+                                    <label class="details" for="valid">Valid Until: </label>
                                     <select name="month" id="month" required>
                                         <option disabled selected value>Month</option>
                                         <option value="jan">January</option>
@@ -106,8 +106,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="xxx" required>
+                            <label class="details" for="cvv">CVV</label>
+                            <input class="details" type="text" id="cvv" name="cvv" placeholder="xxx" required>
 
                         </div>
                     </div>
