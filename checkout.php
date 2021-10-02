@@ -1,112 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Star Wars</title>
-    <meta charset="UTF-8"/>
-    <meta name="author" content=""/>
-    <link rel="stylesheet" href="styles/checkoutStyle.css">
+    <meta charset="UTF-8" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="styles/checkout-style.css">
     <link rel="stylesheet" href="styles/header-style.css">
+    <link rel="stylesheet" href="styles/footer-style2.css">
+    <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
     <script src="" defer></script>
-  </head>
-  <body>
-      <?php 
-      require_once "inc/navbar.php"
-      ?>
-      <div style="height: 100px"></div>
-      <div class="belowHeader">
-    <div class="customerInfo">
-        <div id="shipping">
-        <h1>Shipping</h1>
-        <form action="" method="POST">
-            <label for="firstName">First Name: </label>
-            <br>
-            <input type="text" id="firstName" name="firstName" minlength="2" required>
-            <br>
-            <label for="lastName">Last Name: </label>
-            <br>
-            <input type="text" id="lastName" name="lastName" minlength="2" required>
-            <br>
-            <label for="address">Address: </label>
-            <br>
-            <input type="text" id = "address" name="address" minlength="2" required>
-            <br>
-            <label for="suburb">Suburb: </label>
-            <br>
-            <input type="text" id="suburb" name="suburb" minlength="2" required>
-            <br>
-            <label for="postcode">Post Code: </label>
-            <br>
-            <input type="text" id="postcode" name="postcode" inputmode="numeric" minlength="4" maxlength="4" required>
-            <br>
-            <label for="state">State: </label>
-            <br>
-            <select id="state" name="state" required>
-                <option disabled selected value></option>
-                <option value="ACT">Australian Capital Territory</option>
-                <option value="NSW">New South Wales</option>
-                <option value="NT">Northern Territory</option>
-                <option value="QLD">Queensland</option>
-                <option value="SA">South Australia</option>
-                <option value="TAS">Tasmania</option>
-                <option value="VIC">Victoria</option>
-                <option value="WA">Western Australia</option>
-            </select>
-            <br>
-            <label for="email">Email: </label>
-            <br>
-            <input type="email" id="email" name="email" required>
+</head>
+
+<body>
+    <div class="headergap"></div>
+    <?php
+    require_once "inc/navbar.php"
+    ?>
+
+    <div class="checkout-banner">
+        <h1>Checkout Your Items</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
+    </div>
+    <div class="row-main">
+        <div class="column-75vh">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row-inner">
+                        <div class="column-50vh">
+                            <h3>Your Shipping Details</h3>
+                            <label for="fname"> Full Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Scott Morrison" required>
+                            <label for="email"> Email</label>
+                            <input type="text" id="email" name="email" placeholder="scott@yourpm.com" required>
+                            <label for="adr"> Address</label>
+                            <input type="text" id="address" name="address" placeholder="101 Parliament House" required>
+                            <label for="suburb"> Suburb</label>
+                            <input type="text" id="suburb" name="suburb" placeholder="Canberra" required>
+
+                            <div class="row-inner">
+                                <div class="column-50vh">
+                                    <label for="state">State</label>
+                                    <select id="state" name="state" required default="South Australia" required>
+                                        <option disabled selected value></option>
+                                        <option selected="selected" value="ACT">Australian Capital Territory</option>
+                                        <option value="NSW">New South Wales</option>
+                                        <option value="NT">Northern Territory</option>
+                                        <option value="QLD">Queensland</option>
+                                        <option value="SA">South Australia</option>
+                                        <option value="TAS">Tasmania</option>
+                                        <option value="VIC">Victoria</option>
+                                        <option value="WA">Western Australia</option>
+                                    </select>
+                                </div>
+                                <div class="column-50vh">
+                                    <label for="postcode">Post Code</label>
+                                    <input type="text" id="postcode" name="postcode" placeholder="2601" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column-50vh">
+                            <h3>Payment</h3>
+
+                            <label for="cardname">Name on Card</label>
+                            <input type="text" id="cardname" name="cardname" placeholder="Scott Morrison" required>
+                            <label for="cardNo">Credit card number</label>
+                            <input type="text" id="cardNo" name="cardNo" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+
+
+                            <div class="row-inner">
+                                <div class="column-50vh">
+                                    <label for="valid">Valid Until: </label>
+                                    <select name="month" id="month" required>
+                                        <option disabled selected value>Month</option>
+                                        <option value="jan">January</option>
+                                        <option value="feb">February</option>
+                                        <option value="mar">March</option>
+                                        <option value="apr">April</option>
+                                        <option value="may">May</option>
+                                        <option value="jun">June</option>
+                                        <option value="jul">July</option>
+                                        <option value="aug">August</option>
+                                        <option value="sep">September</option>
+                                        <option value="oct">October</option>
+                                        <option value="nov">November</option>
+                                        <option value="dec">December</option>
+                                    </select>
+                                </div>
+                                <div class="column-50vh">
+                                    <label for="year"></label>
+                                    <select name="year" id="year" required>
+                                        <option disabled selected value>Year</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="xxx" required>
+                            <button id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-            <br>
-            <div id="billing">
-            <h1>Billing</h1>
-            <label for="cardNo">Card Number: </label>
-            <br>
-            <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" id="cardNo" name="cardNo" placeholder="xxxx xxxx xxxx xxxx" required>
-            <br>
-            <label for="cvv">CVV: </label>
-            <br>
-            <input type="tel" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" id="cvv" name="cvv" required>
-            <br>
-            <label for="valid">Valid Until: </label>
-            <select name="month" id="month" required>
-                <option disabled selected value>Month</option>
-                <option value="jan">January</option>
-                <option value="feb">February</option>
-                <option value="mar">March</option>
-                <option value="apr">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="aug">August</option>
-                <option value="sep">September</option>
-                <option value="oct">October</option>
-                <option value="nov">November</option>
-                <option value="dec">December</option>
-            </select>
-            <select name="year" id="year" required>
-                <option disabled selected value>Year</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-            </select>
+
+        <div class="column-25vh">
+            <div class="container">
+                <h4>ORDER SUMMARY
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Sub-total</a> <span class="price">$15</span></p>
+                <p><a href="#">GST</a> <span class="price">$5</span></p>
+                <p><a href="#">Shipping Cost</a> <span class="price">$8</span></p>
+                <hr>
+                <p>Total Price <span class="price" style="color:black"><b>$30</b></span></p>
+            </div>
         </div>
-            <br>
-            <input type="submit" value="Place Order">
-        </form>
     </div>
-    <div id="total">
-        <h1>Total</h1>
-        <p>Sub-Total: </p>
-        <p>GST: </p>
-        <p>Total: </p>
-    </div>
-    </div>
-  </body>
+
+
+    <?php
+    require_once "inc/footer2.php"
+    ?>
+</body>
+
 </html>
