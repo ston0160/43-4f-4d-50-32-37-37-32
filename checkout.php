@@ -6,18 +6,19 @@
     <meta charset="UTF-8" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="styles/checkout-style.css">
-    <link rel="stylesheet" href="styles/header-style.css">
+    <link rel="stylesheet" href="styles/header-nav-style.css">
     <link rel="stylesheet" href="styles/footer-style2.css">
     <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
     <script src="" defer></script>
 </head>
 
 <body>
-    <!-- <div class="headergap"></div> -->
+    <!-- HEADER - NAVBAR -->
     <?php
-    require_once "inc/navbar.php"
+    require_once "inc/header-nav.php"
     ?>
-
+    <div class="nav-spacer"></div>
+    <!-- START OF CHECKOUT PAGE CONTENT -->
     <div class="checkout-banner">
         <h1>Ready to Checkout Your Items?</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
@@ -56,7 +57,7 @@
                                 </div>
                                 <div class="column-50vh">
                                     <label class="details" for="postcode">Post Code</label>
-                                    <input class="details" type="text" id="postcode" name="postcode" placeholder="2601" required>
+                                    <input class="details" type="text" id="postcode" name="postcode" placeholder="9000" required>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +134,7 @@
         </div>
     </div>
 
-
+    <!-- FOOTER -->
     <?php
     require_once "inc/footer2.php"
     ?>
