@@ -1,6 +1,35 @@
 <!-- HEADER NAVBAR -->
 <!-- SIDEBAR MENU -->
-<div class="header-box">
+<div class="nav-full-container">
+  <row class="row-nav">
+    <!-- MENU BUTTON -->
+    <div class="column-33 left-menu">
+      <span><button class="menubtn" onclick="openNav()">☰ Menu</button></span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("menu").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("menu").style.marginLeft = "0";
+        }
+      </script>
+    </div>
+
+    <!-- LOGO IMAGE -->
+    <div class="column-33 center-logo">
+      <a class="header-logo" href="index.php"><img src="images/logo_250x100.png" alt="logo" /></a>
+    </div>
+    <!-- CART BUTTON -->
+    <div class="column-33 right-cart">
+      <button class="addToCart" onclick="openNav()"><b class="fas fa-shopping-cart"></b> Cart</button>
+    </div>
+  </row>
+
+
+
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <button class="accordion">
@@ -28,31 +57,6 @@
           panel.style.display = "block";
         }
       });
-    }
-  </script>
-
-  <!-- CART BUTTON -->
-  <span class="addToCart">
-    <a href="" class="addToCart-Link">
-      <span><b class="fas fa-shopping-cart"></b> Cart</span>
-      <span class="badge">3</span>
-    </a>
-  </span>
-
-  <!-- LOGO IMAGE -->
-  <span class="header-logo"><a href="index.php"><img src="images/logo_250x100.png" alt="logo" /></a></span>
-
-  <!-- MENU BUTTON -->
-  <button class="menubtn" onclick="openNav()">☰ Menu</button>
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("menu").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("menu").style.marginLeft = "0";
     }
   </script>
 </div>
