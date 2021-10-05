@@ -35,8 +35,9 @@ body {
 
 .subImages_proPage {
     position: relative;
-    left: 7.5%;
+    left: 8%;
     max-width: 40%;
+    max-width: 475px;
 
     /* testing */
     /* background-color: greenyellow;
