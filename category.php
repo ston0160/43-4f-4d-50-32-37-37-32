@@ -83,5 +83,6 @@
     <?php
     require_once "inc/footer2.php"
     ?>
+  
 </body>
 </html>

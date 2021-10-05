@@ -37,7 +37,6 @@ body {
 
 .categoryPage-productImage {
     position: relative;
-    max-width: 40%;
     max-width: 475px;
 
     /* testing */
