@@ -24,6 +24,7 @@
 
     <div class="contentArea">
       
+    <div class="imageContentArea_proPage">
         <div class="mainImage_proPage">
           <img src="images/example_front.png" alt="Main" style="width:100%">
         </div>
@@ -33,6 +34,7 @@
             <img src="images/example_side.png" alt="Side" style="width:25%">
             <img src="images/example_bottom.png" alt="Bottom" style="width:25%">
         </div>
+    </div>
        
 
         <div class="productInformation_proPage">
