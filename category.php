@@ -21,13 +21,11 @@
 
     if ($result = mysqli_query($conn, $sql)){
       if (mysqli_num_rows($result) > 0){
-          // echo "<ul id='tasks'>";
           while ($row = mysqli_fetch_assoc($result)){
-              echo "<a href='checkout.php'>
+              echo "<a href='product.php?id=$row[prodID]'>
               <img src='$row[imageRef]'/>
               </a>";
           }
-          // echo "</ul>";
           mysqli_free_result($result);
       }
   }
