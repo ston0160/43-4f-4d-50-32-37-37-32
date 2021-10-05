@@ -12,17 +12,13 @@
     <div class="contentArea">
       <div class="productImages_proPage">
         <div class="mainImage_proPage">
-          <img src="/images/example_front.png" alt="Front" style="width:100%">
+          <img src="images/example_front.png" alt="Main" style="width:100%">
         </div>
 
         <div class="subImages_proPage">
-            <img src="/images/example_front.png" alt="Front" style="width:25%">
-
-          <div class="subImagesArea" align="center"> -->
-            <img src="/images/example_side.png" alt="Side" style="width:25%">
-
-          <div class="subImagesArea" align="center"> -->
-            <img src="/images/example_bottom.png" alt="Bottom" style="width:25%">
+            <img src="images/example_front.png" alt="Front" style="width:25%">
+            <img src="images/example_side.png" alt="Side" style="width:25%">
+            <img src="images/example_bottom.png" alt="Bottom" style="width:25%">
           
         </div>
       </div>  
@@ -44,7 +40,7 @@
 
           <div class="quantityInput_proPage">
             <label class="quantityText_proPage">Quantity</label>
-            <input type="number" class="quantityTextInput" step="1" min="1" max="99" name="quantity" value="1">
+            <input type="number" class="quantityTextInput_proPage" step="1" min="1" max="99" name="quantity" value="1">
           </div>
 
         </div>
