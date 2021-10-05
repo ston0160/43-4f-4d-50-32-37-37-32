@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-    <title>Product Page</title>
-    <meta charset="UTF-8">
-    <meta name="Richard" content="Star Wars">
-    <link rel="stylesheet" href="styles/style_proPage.css"/>
-    <link rel="stylesheet" href="styles/header-nav-style.css">
-    <link rel="stylesheet" href="styles/footer-style2.css">
-    <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
-    <script src="" defer></script>
+  <title>Product Page</title>
+  <meta charset="UTF-8">
+  <meta name="Richard" content="Star Wars">
+  <link rel="stylesheet" href="styles/style_proPage.css" />
+  <link rel="stylesheet" href="styles/header-nav-style.css">
+  <link rel="stylesheet" href="styles/footer-style2.css">
+  <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
+  <script src="" defer></script>
 </head>
 
 <body>
+
   <?php
   require_once "inc/dbconn.php";
 
@@ -51,6 +52,7 @@
 
     <div class="contentArea">
       
+         <div class="imageContentArea_proPage">
         <div class="mainImage_proPage">
         <?php echo "<img src='$productimage[0]' alt='Main' style='width:100%'>" ?>
         </div>
@@ -60,6 +62,7 @@
         <?php echo "<img src='$productimage[1]' alt='Side' style='width:25%'>"?>
         <?php echo "<img src='$productimage[2]' alt='Bottom' style='width:25%'>"?>
         </div>
+           </div>
        
 
         <div class="productInformation_proPage">
@@ -72,18 +75,19 @@
           <p><?php echo "$product[description]"; ?></p>
         </div> 
 
-        <div class="productInformationBottomSection_proPage">
-          <div class="buttonCart_proPage">
-            <p><button>Add to Cart</button></p>
-          </div>
 
-          <div class="quantityInput_proPage">
-            <label class="quantityText_proPage">Quantity</label>
-            <input type="number" class="quantityTextInput_proPage" step="1" min="1" max="99" name="quantity" value="1">
-          </div>
+      <div class="productInformationBottomSection_proPage">
+        <div class="buttonCart_proPage">
+          <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="quantityInput_proPage">
+          <label class="quantityText_proPage">Quantity</label>
+          <input type="number" class="quantityTextInput_proPage" step="1" min="1" max="99" name="quantity" value="1">
         </div>
       </div>
     </div>
+  </div>
 
     
       <!-- FOOTER -->
