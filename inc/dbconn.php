@@ -2,7 +2,7 @@
 
 define("DB_HOST", "localhost");
 define("DB_NAME", "starwars");
-define("DB_USER", "dbadmin@localhost");
+define("DB_USER", "dbadmin");
 define("DB_PASS", "");
 
 $conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);

@@ -44,8 +44,8 @@
                                 <div class="column-50vh">
                                     <label class="details" for="state">State</label>
                                     <select id="state" name="state" required default="South Australia" required>
-                                        <option disabled selected value></option>
-                                        <option selected="selected" value="ACT">Australian Capital Territory</option>
+                                        <option disabled selected value>-- Select --</option>
+                                        <option value="ACT">Australian Capital Territory</option>
                                         <option value="NSW">New South Wales</option>
                                         <option value="NT">Northern Territory</option>
                                         <option value="QLD">Queensland</option>
