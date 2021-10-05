@@ -1,0 +1,145 @@
+body {
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.productPage-banner {
+    max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.contentArea {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.imageContentArea_proPage {
+    top: 20%;
+}
+
+.mainImage_proPage {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    left: 5%;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    /* testing */
+    /* background-color: white; */
+}
+
+.subImages_proPage {
+    position: relative;
+    left: 11.5%;
+    max-width: 40%;
+    max-width: 475px;
+
+    /* testing */
+    /* background-color: greenyellow;
+    outline-style: solid; */
+}
+
+.subImages_proPage :hover {
+    opacity: 0.4;
+    border: 2px solid black;
+}
+
+.subImages_proPage img {
+    border: 2px solid #ddd;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;   
+    background-color: white;
+
+    /* testing */
+    /* background-color: blue; */
+}
+
+.productInformation_proPage {
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    border-radius: 8px;
+    background-color: white;
+
+    /* testing */
+    /* background-color: rgb(185, 35, 223); */
+}
+  
+.price_proPage {
+    color: rgb(37, 141, 12);
+    font-size: 22px;
+    font-weight: bold;
+
+    /* testing */
+    /* background-color: orange; */
+}
+
+.productInformationBottomSection_proPage {
+    display:inline-flexbox;
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-bottom: 19%;
+}
+  
+.buttonCart_proPage button {
+    border: none;
+    outline: 0;
+    padding: 12px 16px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    font-size: 18px;
+    float: left;
+    border-radius: 8px;
+}
+  
+.buttonCart_proPage button:hover {
+    opacity: 0.7;
+}
+
+.quantityInput_proPage {
+    float: right;
+    margin-right: 8%;
+    
+    /* testing */
+    /* background-color: greenyellow; */
+}
+
+.quantityText_proPage {
+    font-family: arial;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-right: 2%;
+}
+
+.quantityTextInput_proPage {
+    border-style: solid;
+    border-color: transparent;
+    padding: 10px 12px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 40%;
+    font-size: 18px;
+    border-radius: 8px;
+}
