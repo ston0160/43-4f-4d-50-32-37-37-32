@@ -1,9 +1,29 @@
+body {
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.productPage-banner {
+    max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.contentArea {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 .mainImage_proPage {
     max-width: 400px;
     margin: auto;
-    position: absolute;
+    position: relative;
     top: 20%;
-    left: 20%;
+    left: -25%;
     border-radius: 8px;
     background-color: white;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
@@ -14,10 +34,9 @@
 }
 
 .subImages_proPage {
-    position: fixed;
-    top: 74%;
-    left: 20.6%;
-    max-width: 25%;
+    position: relative;
+    left: 7.5%;
+    max-width: 40%;
 
     /* testing */
     /* background-color: greenyellow;
@@ -51,9 +70,8 @@
     margin: auto;
     text-align: center;
     font-family: arial;
-    position: absolute;
-    top: 25%;
-    right: 20%;
+    position: relative;
+    
     border-radius: 8px;
     background-color: white;
 

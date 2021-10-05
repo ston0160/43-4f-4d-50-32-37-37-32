@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-      <link rel="stylesheet" href="styles/style_proPage.css"/>
-      <title>Product Page</title>
-    <meta charset="UTF-8"> <meta name="Richard" content="Star Wars">
-  </head>
+  
+<head>
+    <title>Product Page</title>
+    <meta charset="UTF-8">
+    <meta name="Richard" content="Star Wars">
+    <link rel="stylesheet" href="styles/style_proPage.css"/>
+    <link rel="stylesheet" href="styles/header-nav-style.css">
+    <link rel="stylesheet" href="styles/footer-style2.css">
+    <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
+    <script src="" defer></script>
+</head>
 
-  <body>
+<body>
+    <!-- HEADER - NAVBAR -->
+    <?php
+    require_once "inc/header-nav.php"
+    ?>
+    <div class="nav-spacer"></div>
+    
+    <!-- START OF PRODUCT PAGE CONTENT -->
+    <div class="productPage-banner"></div>
 
     <div class="contentArea">
-      <div class="productImages_proPage">
+      
         <div class="mainImage_proPage">
           <img src="images/example_front.png" alt="Main" style="width:100%">
         </div>
@@ -19,14 +32,13 @@
             <img src="images/example_front.png" alt="Front" style="width:25%">
             <img src="images/example_side.png" alt="Side" style="width:25%">
             <img src="images/example_bottom.png" alt="Bottom" style="width:25%">
-          
         </div>
-      </div>  
+       
 
         <div class="productInformation_proPage">
           <div class="productInformationTopSection_proPage">
           <h1>Product Name</h1>
-          <p class="price">AUD$0.00</p>
+          <p class="price_proPage">AUD$0.00</p>
         </div>
         
         <div class="productInformationMiddleSection_proPage">
@@ -42,10 +54,14 @@
             <label class="quantityText_proPage">Quantity</label>
             <input type="number" class="quantityTextInput_proPage" step="1" min="1" max="99" name="quantity" value="1">
           </div>
-
         </div>
       </div>
-
     </div>
+
+    
+      <!-- FOOTER -->
+    <?php
+    require_once "inc/footer2.php"
+    ?>
   </body>
 </html>
