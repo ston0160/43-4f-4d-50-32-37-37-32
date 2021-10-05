@@ -1,5 +1,6 @@
 body {
     padding: 8px;
+    font-family: lato, Verdana, sans-serif;
 }
 
 * {
@@ -12,18 +13,18 @@ body {
   margin-bottom: 50px;
 }
 
-.contentArea {
+.productPage-contentArea {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 80%;
 }
 
-.imageContentArea_proPage {
+.productPage-imageContentArea {
     top: 20%;
 }
 
-.mainImage_proPage {
+.productPage-mainImage {
     max-width: 400px;
     margin: auto;
     position: relative;
@@ -37,7 +38,7 @@ body {
     /* background-color: white; */
 }
 
-.subImages_proPage {
+.productPage-subImages {
     position: relative;
     left: 11.5%;
     max-width: 40%;
@@ -48,12 +49,12 @@ body {
     outline-style: solid; */
 }
 
-.subImages_proPage :hover {
+.productPage-subImages :hover {
     opacity: 0.4;
     border: 2px solid black;
 }
 
-.subImages_proPage img {
+.productPage-subImages img {
     border: 2px solid #ddd;
     position: relative;
     top: 2px;
@@ -67,7 +68,7 @@ body {
     /* background-color: blue; */
 }
 
-.productInformation_proPage {
+.productPage-productInformation {
     box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1%;
@@ -83,7 +84,7 @@ body {
     /* background-color: rgb(185, 35, 223); */
 }
   
-.price_proPage {
+.productPage-price {
     color: rgb(37, 141, 12);
     font-size: 22px;
     font-weight: bold;
@@ -92,14 +93,14 @@ body {
     /* background-color: orange; */
 }
 
-.productInformationBottomSection_proPage {
+.productPage-productInformationBottomSection {
     display:inline-flexbox;
     margin-top: 6%;
     margin-left: 10%;
     margin-bottom: 19%;
 }
   
-.buttonCart_proPage button {
+.productPage-buttonCart button {
     border: none;
     outline: 0;
     padding: 12px 16px;
@@ -113,11 +114,11 @@ body {
     border-radius: 8px;
 }
   
-.buttonCart_proPage button:hover {
+.productPage-buttonCart button:hover {
     opacity: 0.7;
 }
 
-.quantityInput_proPage {
+.productPage-quantityInput {
     float: right;
     margin-right: 8%;
     
@@ -125,14 +126,14 @@ body {
     /* background-color: greenyellow; */
 }
 
-.quantityText_proPage {
+.productPage-quantityText {
     font-family: arial;
     font-weight: bolder;
     font-size: 18px;
     margin-right: 2%;
 }
 
-.quantityTextInput_proPage {
+.productPage-quantityTextInput {
     border-style: solid;
     border-color: transparent;
     padding: 10px 12px;
