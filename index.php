@@ -49,7 +49,7 @@
       <span>The Rebellion</span>
     </button>
     <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()">
-      <span>Sith Empire</span>
+      <span>The Empire</span>
     </button>
   </div>
   <div class="banner-text">
