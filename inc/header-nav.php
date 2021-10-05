@@ -35,14 +35,14 @@
     <button class="accordion">
       <b class="fab fa-jedi-order"> The Rebellion</b>
     </button>
-    <a href="#" class="panel">Jedi</a>
-    <a href="#" class="panel">Droids</a>
-    <a href="#" class="panel">Rebellion Vehicles</a>
+    <a href="category.php?category=Jedi" class="panel">Jedi</a>
+    <a href="category.php?category=Droids" class="panel">Droids</a>
+    <a href="category.php?category=Rebellion Vehicles" class="panel">Rebellion Vehicles</a>
     <button class="accordion">
       <b class="fab fa-galactic-senate"> The Empire</b>
     </button>
-    <a href="#" class="panel">Sith Lords</a>
-    <a href="#" class="panel">Empire Vehicles</a>
+    <a href="category.php?category=Sith Lords" class="panel">Sith Lords</a>
+    <a href="category.php?category=Empire Vehicles" class="panel">Empire Vehicles</a>
   </div>
   <script>
     var acc = document.getElementsByClassName("accordion");

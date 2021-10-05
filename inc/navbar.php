@@ -10,9 +10,7 @@
     <a href="category.php?category=Droids" class="panel">Droids</a>
     <a href="category.php?category=Rebellion Vehicles" class="panel">Rebellion Vehicles</a>
     <button class="accordion">
-      <a href="category.php?category=Sith Lords">
         <b class="fab fa-galactic-senate"> The Empire</b>
-      </a>
     </button>
     <a href="category.php?category=Sith Lords" class="panel">Sith Lords</a>
     <a href="category.php?category=Empire Vehicles" class="panel">Empire Vehicles</a>
