@@ -13,6 +13,33 @@
 </head>
 
 <body>
+  <?php
+  require_once "inc/dbconn.php";
+
+  $id = ($_GET["id"]);
+  $sql = "SELECT * FROM product WHERE prodID = '$id'";
+  $sqlimage = "SELECT imageRef FROM productimage WHERE prodID = '$id'";
+  $i = -1;
+
+  if ($result = mysqli_query($conn, $sql)){
+    if (mysqli_num_rows($result) > 0){
+      $product = mysqli_fetch_assoc($result);
+      mysqli_free_result($result);
+    }
+  }
+
+  if ($result = mysqli_query($conn, $sqlimage)){
+    if (mysqli_num_rows($result) > 0){
+      while ($row = mysqli_fetch_row($result)){
+        $i++;
+        $productimage[$i] = $row[0];
+      }
+      mysqli_free_result($result);
+    }
+  }
+        ?>
+        
+
     <!-- HEADER - NAVBAR -->
     <?php
     require_once "inc/header-nav.php"
@@ -25,24 +52,24 @@
     <div class="contentArea">
       
         <div class="mainImage_proPage">
-          <img src="images/example_front.png" alt="Main" style="width:100%">
+        <?php echo "<img src='$productimage[0]' alt='Main' style='width:100%'>" ?>
         </div>
 
         <div class="subImages_proPage">
-            <img src="images/example_front.png" alt="Front" style="width:25%">
-            <img src="images/example_side.png" alt="Side" style="width:25%">
-            <img src="images/example_bottom.png" alt="Bottom" style="width:25%">
+        <?php echo "<img src='$productimage[0]' alt='Front' style='width:25%'>"?>
+        <?php echo "<img src='$productimage[1]' alt='Side' style='width:25%'>"?>
+        <?php echo "<img src='$productimage[2]' alt='Bottom' style='width:25%'>"?>
         </div>
        
 
         <div class="productInformation_proPage">
           <div class="productInformationTopSection_proPage">
-          <h1>Product Name</h1>
-          <p class="price_proPage">AUD$0.00</p>
+          <h1><?php echo "$product[prodName]"; ?></h1>
+          <p class="price_proPage">AUD$<?php echo "$product[price]"; ?></p>
         </div>
         
         <div class="productInformationMiddleSection_proPage">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna tempus congue magna dapibus, venenatis tincidunt lectus praesent vestibulum.</p>
+          <p><?php echo "$product[description]"; ?></p>
         </div> 
 
         <div class="productInformationBottomSection_proPage">
@@ -63,5 +90,8 @@
     <?php
     require_once "inc/footer2.php"
     ?>
+<?php
+mysqli_close($conn);
+?>
   </body>
 </html>
