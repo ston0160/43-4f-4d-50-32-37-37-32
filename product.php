@@ -90,6 +90,17 @@
   </div>
 
   </div>
+<<<<<<< HEAD
+      <!-- FOOTER -->
+    <?php
+    require_once "inc/footer2.php"
+    ?>
+<?php
+mysqli_close($conn);
+?>
+  </body>
+</html>
+=======
   <!-- FOOTER -->
   <?php
   require_once "inc/footer2.php"
@@ -116,3 +127,7 @@
 </body>
 
 </html>
+<<<<<<< Updated upstream
+>>>>>>> af8542df856b658b09ef90e0bddb3d4023e68f5e
+=======
+>>>>>>> Stashed changes
