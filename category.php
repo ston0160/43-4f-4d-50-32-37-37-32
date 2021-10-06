@@ -28,9 +28,7 @@
     </div>
   </div>
 
-  <div class="categoryPage-productInformationCard">
-
-    <div class="categoryPage-productImage">
+  
       <!-- RICHARD: BELOW 1 LINE IS THE ORIGINAL CODE FOR YOUR IMAGES -->
       <!-- <img src="images/example_front.png" alt="Product Image" style="width:75%"> -->
       <?php
@@ -42,23 +40,24 @@
       if ($result = mysqli_query($conn, $sql)) {
         if (mysqli_num_rows($result) > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
-            echo "<a href='product.php?id=$row[prodID]'>
-              <img src='$row[imageRef]'/>
-              </a>";
+            echo "<div class='categoryPage-productInformationCard'>";
+            echo    "<div class='categoryPage-productImage'>";
+            echo      "<a href='product.php?id=$row[prodID]'>";
+            echo      "<img src='$row[imageRef]'/>";
+            echo      "</a>";
+            echo    "</div>";
+            echo  "<div class='categoryPage-productData'>";
+            echo    "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
+            echo    "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
+            echo  "</div>";
+            echo "</div>";
           }
           mysqli_free_result($result);
         }
       }
       mysqli_close($conn);
       ?>
-    </div>
-
-    <div class="categoryPage-productData">
-      <h1 class="categoryPage-productName">Product Name</h1>
-      <p class="categoryPage-productPrice">AUD$0.00</p>
-    </div>
-
-  </div>
+    
   <!-- End of Richard's Code -->
 
 
