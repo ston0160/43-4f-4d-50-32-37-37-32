@@ -127,4 +127,7 @@ mysqli_close($conn);
 </body>
 
 </html>
+<<<<<<< Updated upstream
 >>>>>>> af8542df856b658b09ef90e0bddb3d4023e68f5e
+=======
+>>>>>>> Stashed changes
