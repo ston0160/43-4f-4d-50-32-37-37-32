@@ -22,58 +22,58 @@
   $sqlimage = "SELECT imageRef FROM productimage WHERE prodID = '$id'";
   $i = -1;
 
-  if ($result = mysqli_query($conn, $sql)){
-    if (mysqli_num_rows($result) > 0){
+  if ($result = mysqli_query($conn, $sql)) {
+    if (mysqli_num_rows($result) > 0) {
       $product = mysqli_fetch_assoc($result);
       mysqli_free_result($result);
     }
   }
 
-  if ($result = mysqli_query($conn, $sqlimage)){
-    if (mysqli_num_rows($result) > 0){
-      while ($row = mysqli_fetch_row($result)){
+  if ($result = mysqli_query($conn, $sqlimage)) {
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_row($result)) {
         $i++;
         $productimage[$i] = $row[0];
       }
       mysqli_free_result($result);
     }
   }
-        ?>
-        
+  ?>
 
-    <!-- HEADER - NAVBAR -->
-    <?php
-    require_once "inc/header-nav.php"
-    ?>
-    <div class="nav-spacer"></div>
-    
+
+  <!-- HEADER - NAVBAR -->
+  <?php
+  require_once "inc/header-nav.php"
+  ?>
+  <div class="nav-spacer"></div>
+
   <!-- START OF PRODUCT PAGE CONTENT -->
   <div class="productPage-banner"></div>
 
   <div class="productPage-contentArea">
-      
-         <div class="productPage-imageContentArea">
-        <div class="productPage-mainImage">
-        <?php echo "<img src='$productimage[0]' alt='Main' style='width:100%'>" ?>
-        </div>
 
-        <div class="productPage-subImages">
-        <?php echo "<img src='$productimage[0]' alt='Front' style='width:25%'>"?>
-        <?php echo "<img src='$productimage[1]' alt='Side' style='width:25%'>"?>
-        <?php echo "<img src='$productimage[2]' alt='Bottom' style='width:25%'>"?>
-        </div>
-           </div>
-       
+    <div class="productPage-imageContentArea">
+      <div class="productPage-mainImage">
+        <?php echo "<img id='MainImg' src='$productimage[0]' alt='Front' style='width:100%'>" ?>
+      </div>
 
-        <div class="productPage-productInformation">
-          <div class="productPage-productInformationTopSection">
-          <h1><?php echo "$product[prodName]"; ?></h1>
-          <p class="productPage-price">AUD$<?php echo "$product[price]"; ?></p>
-        </div>
-        
-        <div class="productPage-productInformationMiddleSection">
-          <p><?php echo "$product[description]"; ?></p>
-        </div> 
+      <div class="productPage-subImages">
+        <?php echo "<img class='thumb_image' src='$productimage[0]' alt='Front' style='width:25%'>" ?>
+        <?php echo "<img class='thumb_image' src='$productimage[1]' alt='Side' style='width:25%'>" ?>
+        <?php echo "<img class='thumb_image' src='$productimage[2]' alt='Bottom' style='width:25%'>" ?>
+      </div>
+    </div>
+
+
+    <div class="productPage-productInformation">
+      <div class="productPage-productInformationTopSection">
+        <h1><?php echo "$product[prodName]"; ?></h1>
+        <p class="productPage-price">AUD$<?php echo "$product[price]"; ?></p>
+      </div>
+
+      <div class="productPage-productInformationMiddleSection">
+        <p><?php echo "$product[description]"; ?></p>
+      </div>
 
 
       <div class="productPage-productInformationBottomSection">
@@ -90,12 +90,29 @@
   </div>
 
   </div>
-      <!-- FOOTER -->
-    <?php
-    require_once "inc/footer2.php"
-    ?>
-<?php
-mysqli_close($conn);
-?>
-  </body>
+  <!-- FOOTER -->
+  <?php
+  require_once "inc/footer2.php"
+  ?>
+  <?php
+  mysqli_close($conn);
+  ?>
+
+  <!-- JIM SCRIPT TO CHANGE THE IMAGES -->
+  <script>
+    let showcase = document.getElementById('MainImg');
+    let thumb_img = document.getElementsByClassName('thumb_image');
+
+    thumb_img[0].onclick = function() {
+      showcase.src = thumb_img[0].src;
+    }
+    thumb_img[1].onclick = function() {
+      showcase.src = thumb_img[1].src;
+    }
+    thumb_img[2].onclick = function() {
+      showcase.src = thumb_img[2].src;
+    }
+  </script>
+</body>
+
 </html>
