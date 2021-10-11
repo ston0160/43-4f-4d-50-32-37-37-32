@@ -17,17 +17,20 @@
     <?php
     require_once "inc/header-nav.php"
     ?>
+    <div class="nav-spacer"></div>
 
-    <div>
-        <p><i class="far fa-check-circle"></i></p>
-        <h1>Thank you</h1>
-        <h2>$Full Name</h1>
-            <p>Sit back and relax, your Starwars Collectible Figurine is on its way!</p>
-            <button>GOT IT</button>
-            <p>Order confirmation was sent to <b>$your-email</b></p>
-            <p>Your order was confirmed at $date-time.</p>
-            <p>Questions?</p>
-            <p><i class="fas fa-phone"></i> Call us at 08 8201 2345</p>
+    <div class="flex-container">
+        <div class="column-30vh">
+            <div class="icon-check"><i class="far fa-check-circle"></i></div>
+            <h1>THANK YOU</h1>
+            <h2>$Full Name</h1>
+                <p>Sit back and relax, your Starwars Collectible Figurine is flying your way!</p>
+                <button id="submit-button" type="" class="btn-one">GOT IT</button><br><br><br>
+                <p>An order confirmation was sent to <b>$your-email</b></p>
+                <p>Your order was confirmed at <b>$date-time.</b></p><br><br>
+                <p>Questions?</p>
+                <p><i class="fas fa-phone"></i> Call us at 08 8201 2345</p>
+        </div>
     </div>
 
 
