@@ -45,15 +45,15 @@
         if (mysqli_num_rows($result) > 0) {
           while ($row = mysqli_fetch_assoc($result)) {
             echo "<div class='categoryPage-productInformationCard'>";
-            echo "<div class='categoryPage-productImage'>";
-            echo "<a href='product.php?id=$row[prodID]'>";
-            echo "<img src='$row[imageRef]'/>";
-            echo "</a>";
-            echo "<div class='categoryPage-productData'>";
-            echo "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
-            echo "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
-            echo "</div>";
-            echo "</div>";
+            echo    "<div class='categoryPage-productImage'>";
+            echo      "<a href='product.php?id=$row[prodID]'>";
+            echo      "<img src='$row[imageRef]'/>";
+            echo      "</a>";
+            echo    "</div>";
+            echo  "<div class='categoryPage-productData'>";
+            echo    "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
+            echo    "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
+            echo  "</div>";
             echo "</div>";
           }
           mysqli_free_result($result);
