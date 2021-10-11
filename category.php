@@ -12,7 +12,32 @@
   <script src="" defer></script>
 </head>
 
+<<<<<<< HEAD
+  <body>
+    <?php 
+    require_once "inc/dbconn.php";
+    
+    $category = ($_GET["category"]);
+    $sql = "SELECT * FROM product, productimage WHERE product.prodID = productimage.prodID AND category = '$category' AND imageRef LIKE '%1.jpg';";
+
+    if ($result = mysqli_query($conn, $sql)){
+      if (mysqli_num_rows($result) > 0){
+          while ($row = mysqli_fetch_assoc($result)){
+              echo "<a href='product.php?id=$row[prodID]'>
+              <img src='$row[imageRef]'/>
+              </a>";
+          }
+          mysqli_free_result($result);
+      }
+  }
+  mysqli_close($conn);
+    ?>
+
+
+
+=======
 <body>
+>>>>>>> af8542df856b658b09ef90e0bddb3d4023e68f5e
   <!-- Richard's Code -->
   <!-- HEADER - NAVBAR -->
   <?php
