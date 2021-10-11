@@ -82,8 +82,8 @@ INSERT INTO Product VALUES (5, "C-3PO", 49.99, 2, "Droids", "Light", "I dont kno
 INSERT INTO Product VALUES (6, "Millenium Falcon", 199.99, 3, "Rebellion Vehicles", "Light", "Best spaceship in the galaxy.");
 INSERT INTO Product VALUES (7, "Darth Vader", 129.99, 6, "Sith Lords", "Dark", "*Breathing Noises*.");
 INSERT INTO Product VALUES (8, "Darth Maul", 69.99, 2, "Sith Lords", "Dark", "I have a cool red lightsaber.");
-INSERT INTO Product VALUES (9, "AT-AT", 119.99, 1, "Empire Vehicles", "Dark", "Big robot elephant.");
-INSERT INTO Product VALUES (10, "Darth Sidious", 74.99, 1, "Sith Lords", "Dark", "Flamey hand.");
+INSERT INTO Product VALUES (9, "Darth Sidious", 74.99, 1, "Sith Lords", "Dark", "Flamey hand.");
+INSERT INTO Product VALUES (10, "AT-AT", 119.99, 1, "Empire Vehicles", "Dark", "Big robot elephant.");
 
 INSERT INTO ProductImage VALUES (1, "images/YODA1.png");
 INSERT INTO ProductImage VALUES (1, "images/YODA2.png");
@@ -109,9 +109,9 @@ INSERT INTO ProductImage VALUES (7, "images/VADER3.png");
 INSERT INTO ProductImage VALUES (8, "images/DMAUL1.png");
 INSERT INTO ProductImage VALUES (8, "images/DMAUL2.png");
 INSERT INTO ProductImage VALUES (8, "images/DMAUL3.png");
-INSERT INTO ProductImage VALUES (9, "images/ATAT1.png");
-INSERT INTO ProductImage VALUES (9, "images/ATAT2.png");
-INSERT INTO ProductImage VALUES (9, "images/ATAT3.png");
-INSERT INTO ProductImage VALUES (10, "images/DARSID1.png");
-INSERT INTO ProductImage VALUES (10, "images/DARSID2.png");
-INSERT INTO ProductImage VALUES (10, "images/DARSID3.png");
+INSERT INTO ProductImage VALUES (9, "images/DARSID1.png");
+INSERT INTO ProductImage VALUES (9, "images/DARSID2.png");
+INSERT INTO ProductImage VALUES (9, "images/DARSID3.png");
+INSERT INTO ProductImage VALUES (10, "images/ATAT1.png");
+INSERT INTO ProductImage VALUES (10, "images/ATAT2.png");
+INSERT INTO ProductImage VALUES (10, "images/ATAT3.png");
