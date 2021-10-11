@@ -4,13 +4,17 @@
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <button class="accordion">
-      <b class="fab fa-jedi-order"> The Rebellion</b>
+      <a href="category.php?association=Light">
+        <b class="fab fa-jedi-order"> The Rebellion</b>
+      </a>
     </button>
     <a href="category.php?category=Jedi" class="panel">Jedi</a>
     <a href="category.php?category=Droids" class="panel">Droids</a>
     <a href="category.php?category=Rebellion Vehicles" class="panel">Rebellion Vehicles</a>
     <button class="accordion">
+      <a href="category.php?association=Dark">
         <b class="fab fa-galactic-senate"> The Empire</b>
+      </a>
     </button>
     <a href="category.php?category=Sith Lords" class="panel">Sith Lords</a>
     <a href="category.php?category=Empire Vehicles" class="panel">Empire Vehicles</a>

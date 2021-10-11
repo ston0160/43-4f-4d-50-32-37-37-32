@@ -46,10 +46,14 @@
 
   <div class="main-buttons">
     <button class="button" id="rebellion-btn" onmouseover="newBannerJedi()" onmouseout="oldBanner()">
+     <a href="category.php?association=Light">
       <span>The Rebellion</span>
+     </a>
     </button>
     <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()">
-      <span>The Empire</span>
+      <a href="category.php?association=Dark">
+        <span>The Empire</span>
+      </a>
     </button>
   </div>
   <div class="banner-text">
