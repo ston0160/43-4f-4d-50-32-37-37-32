@@ -17,7 +17,7 @@
   <?php
   require_once "inc/dbconn.php";
 
-  $id = ($_GET["id"]);
+  $id = htmlspecialchars(($_GET["id"]));
   $sql = "SELECT * FROM product WHERE prodID = '$id'";
   $sqlimage = "SELECT imageRef FROM productimage WHERE prodID = '$id'";
   $i = -1;

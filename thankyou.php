@@ -15,7 +15,18 @@
 <body>
     <!-- HEADER - NAVBAR -->
     <?php
-    require_once "inc/header-nav.php"
+    require_once "inc/header-nav.php";
+    require_once "inc/dbconn.php";
+
+    $id = 1;
+    $sql = "SELECT * FROM customer WHERE custID = '$id'";
+
+    if ($result = mysqli_query($conn, $sql)) {
+        if (mysqli_num_rows($result) > 0) {
+          $customer = mysqli_fetch_assoc($result);
+          mysqli_free_result($result);
+        }
+      }
     ?>
     <div class="nav-spacer"></div>
 
@@ -23,10 +34,10 @@
         <div class="column-30vh">
             <div class="icon-check"><i class="far fa-check-circle"></i></div>
             <h1>THANK YOU</h1>
-            <h2>$Full Name</h1>
+            <h2><?php echo "$customer[name]"; ?></h1>
                 <p>Sit back and relax, your Starwars Collectible Figurine is flying your way!</p>
                 <button id="submit-button" type="" class="btn-one">GOT IT</button><br><br><br>
-                <p>An order confirmation was sent to <b>$your-email</b></p>
+                <p>An order confirmation was sent to <b><?php echo "$customer[email]" ?></b></p>
                 <p>Your order was confirmed at <b>$date-time.</b></p><br><br>
                 <p>Questions?</p>
                 <p><i class="fas fa-phone"></i> Call us at 08 8201 2345</p>

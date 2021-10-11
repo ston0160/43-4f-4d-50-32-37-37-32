@@ -115,3 +115,5 @@ INSERT INTO ProductImage VALUES (9, "images/DARSID3.png");
 INSERT INTO ProductImage VALUES (10, "images/ATAT1.png");
 INSERT INTO ProductImage VALUES (10, "images/ATAT2.png");
 INSERT INTO ProductImage VALUES (10, "images/ATAT3.png");
+
+INSERT INTO Customer VALUES (1, "John Smith", "123 Fake Street", "Adelaide", "5000", "SA", "Johnsmith@hotmail.com");
