@@ -10,22 +10,22 @@
       <div class="column-25">
         <h6>Categories</h6>
         <ul class="footer-links">
-          <li><a href="http://scanfcode.com/category/c-language/">Jedi</a></li>
-          <li><a href="http://scanfcode.com/category/front-end-development/">Droids</a></li>
-          <li><a href="http://scanfcode.com/category/back-end-development/">Rebellion Vehicles</a></li>
-          <li><a href="http://scanfcode.com/category/java-programming-language/">Sith Lords</a></li>
-          <li><a href="http://scanfcode.com/category/android/">Empire Vehicles</a></li>
+          <li><a href="category.php?category=Jedi">Jedi</a></li>
+          <li><a href="category.php?category=Droids">Droids</a></li>
+          <li><a href="category.php?category=Rebellion Vehicles">Rebellion Vehicles</a></li>
+          <li><a href="category.php?category=Sith Lords">Sith Lords</a></li>
+          <li><a href="category.php?category=Empire Vehicles">Empire Vehicles</a></li>
         </ul>
       </div>
 
       <div class="column-25">
         <h6>Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="http://scanfcode.com/about/">Category Page</a></li>
-          <li><a href="http://scanfcode.com/contact/">Cart Page</a></li>
-          <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Product Page</a></li>
-          <li><a href="http://scanfcode.com/privacy-policy/">Order Summary</a></li>
-          <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          <li><a href="category.php?association=Light">Category Page</a></li>
+          <li><a href="cart.php">Cart Page</a></li>
+          <li><a href="#">Product Page</a></li>
+          <li><a href="#">Order Summary</a></li>
+          <li><a href="#">Sitemap</a></li>
         </ul>
       </div>
     </div>
@@ -46,7 +46,6 @@
         <ul class="social-icons">
           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
           <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
