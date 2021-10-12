@@ -39,7 +39,7 @@
   <span class="addToCart">
     <a href="" class="addToCart-Link">
       <span><b class="fas fa-shopping-cart"></b> Cart</span>
-      <span class="badge">3</span>
+      <!-- <span class="badge">3</span> -->
     </a>
   </span>
 

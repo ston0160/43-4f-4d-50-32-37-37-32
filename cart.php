@@ -6,7 +6,10 @@ require_once "inc/dbconn.php";
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/cartStyle.css">
+    <link rel="stylesheet" href="styles/cart-style.css">
+    <link rel="stylesheet" href="styles/header-nav-style.css">
+    <link rel="stylesheet" href="styles/footer-style2.css">
+    <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="author" content="Illia Sheshyn" />
     <meta name="description" content="Shopping Cart" />
@@ -14,92 +17,82 @@ require_once "inc/dbconn.php";
 </head>
 
 <body>
-    <div class="wrapper">
+    <!-- HEADER - NAVBAR -->
+    <?php require_once "inc/header-nav.php"; ?>
+    <div class="nav-spacer"></div>
 
-        <div class="title">
-            <div class="inner-title">
-                <h3 class="pageTitle">SHOPPING CART</h3>
-            </div>
-        </div>
+    <!-- PAGE CONTENT -->
+    <div class="checkout-banner">
+        <h1>Shopping Cart</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
+    </div>
+    <div class="row-main">
+        <div class="column-75vh">
+            <div class="container">
+                <h2>Your Cart Items</h2>
 
-        <div class="content">
-            <div class="group">
+                <?php if (isset($_SESSION)) {
+                    foreach ($_SESSION as $key => $val) {
 
-                <div class="cart">
-                    <div class="inner-cart">
-                        <div class="cartHeader">Cart</div>
-
-                        <?php if (isset($_SESSION)) {
-                            // print_r($_SESSION);
-                            // echo "id =   $prodIdent";
-                            foreach ($_SESSION as $key => $val) {
-
-                                $sql = "SELECT * FROM product WHERE prodID = '$key'";
-                                $sqlimage = "SELECT imageRef FROM productimage WHERE prodID = '$key'";
+                        $sql = "SELECT * FROM product WHERE prodID = '$key'";
+                        $sqlimage = "SELECT imageRef FROM productimage WHERE prodID = '$key'";
 
 
-                                if ($result = mysqli_query($conn, $sql)) {
-                                    if (mysqli_num_rows($result) > 0) {
-                                        $product = mysqli_fetch_assoc($result);
-                                        mysqli_free_result($result);
+                        if ($result = mysqli_query($conn, $sql)) {
+                            if (mysqli_num_rows($result) > 0) {
+                                $product = mysqli_fetch_assoc($result);
+                                mysqli_free_result($result);
 
-                                        $result = mysqli_query($conn, $sqlimage);
-                                        $productImage = mysqli_fetch_row($result);
-                                        $total += ($product['price'] * $val);
-                        ?>
-                                        <div class="cartItem">
-                                            <div class="inner-cartItem group">
-                                                <div class="itemImage"><img src="<?php echo $productImage[0]; ?>"></div>
-                                                <div class="itemContent">
-                                                    <div class="itemTitle"><?php echo $product['prodName']; ?></div>
-                                                    <div class="itemDescr">
-                                                        <p><?php echo $val; ?></p>
-                                                        <p>Individual Price : AUD$<?php echo $product['price'];  ?></p>
-                                                        <p>Sub-Total :<?php echo ($product['price'] * $val);  ?></p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                        <?php
-                                    }
-                                }
-                            }
-                        }
-                        ?>
-
-                        <!-- <div class="cartItem">
-                            <div class="inner-cartItem group">
-                                <div class="itemImage"></div>
-                                <div class="itemContent">
-                                    <div class="itemTitle">Product Name</div>
-                                    <div class="itemDescr">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                $result = mysqli_query($conn, $sqlimage);
+                                $productImage = mysqli_fetch_row($result);
+                                $total += ($product['price'] * $val);
+                ?>
+                                <div class="cart-items row-inner">
+                                    <div class="item-image column-20vh">
+                                        <p><img src="<?php echo $productImage[0]; ?>"></p>
+                                    </div>
+                                    <div class="item-desc column-20vh">
+                                        <h2><?php echo $product['prodName']; ?></h2>
+                                        <h3>$ <?php echo $product['price'];  ?></h3>
+                                    </div>
+                                    <div class="item-qty column-20vh">
+                                        <h2><?php echo $val; ?></h2>
+                                    </div>
+                                    <div class="item-sub column-20vh">
+                                        <h2>$ <?php echo ($product['price'] * $val);  ?></h2>
                                     </div>
                                 </div>
-                            </div>
-                        </div> -->
-
-
-
-
-                    </div>
-                </div>
-
-                <div class="sidebar">
-                    <div class="inner-sidebar">sidebar
-                        <p><?php echo $total; ?></p>
-                    </div>
-                </div>
-
-
-                <div class="footer">footer</div>
+                <?php
+                            }
+                        }
+                    }
+                }
+                ?>
 
             </div>
         </div>
-
+        <div class="column-25vh">
+            <div class="container">
+                <h4>CART SUMMARY
+                    <span class="price" style="color:white; font-size: 20px;">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a class="order-summary" href="#">Sub-total</a> <span class="price">$15</span></p>
+                <p><a class="order-summary" href="#">GST</a> <span class="price">$5</span></p>
+                <p><a class="order-summary" href="#">Shipping Cost</a> <span class="price">$8</span></p>
+                <hr>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo "$total"; ?></b></span></p>
+                <button id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+            </div>
+        </div>
     </div>
+    <!-- FOOTER -->
+    <?php
+    require_once "inc/footer2.php"
+    ?>
+
 </body>
 
 </html>
