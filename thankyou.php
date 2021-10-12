@@ -1,3 +1,8 @@
+<?php
+session_start();
+session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +28,10 @@
 
     if ($result = mysqli_query($conn, $sql)) {
         if (mysqli_num_rows($result) > 0) {
-          $customer = mysqli_fetch_assoc($result);
-          mysqli_free_result($result);
+            $customer = mysqli_fetch_assoc($result);
+            mysqli_free_result($result);
         }
-      }
+    }
     ?>
     <div class="nav-spacer"></div>
 

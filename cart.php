@@ -84,11 +84,12 @@ require_once "inc/dbconn.php";
                 <p><a class="order-summary" href="#">Shipping Cost</a> <span class="price">$8</span></p>
                 <hr>
                 <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo "$total"; ?></b></span></p>
-                <button id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+                <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
             </div>
         </div>
     </div>
     <!-- FOOTER -->
+    <div class="nav-spacer"></div>
     <?php
     require_once "inc/footer2.php"
     ?>

@@ -113,6 +113,7 @@
   </div>
 
   <!-- FOOTER -->
+  <div class="nav-spacer"></div>
   <?php
   require_once "inc/footer2.php"
   ?>

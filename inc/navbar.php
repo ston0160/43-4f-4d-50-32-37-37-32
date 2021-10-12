@@ -37,7 +37,7 @@
 
   <!-- CART BUTTON -->
   <span class="addToCart">
-    <a href="" class="addToCart-Link">
+    <a href="cart.php" class="addToCart-Link">
       <span><b class="fas fa-shopping-cart"></b> Cart</span>
       <!-- <span class="badge">3</span> -->
     </a>
