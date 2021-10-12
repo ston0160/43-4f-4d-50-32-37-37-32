@@ -47,7 +47,7 @@ $_SESSION[$prodID] += $quantity;
             <h2>Your item is now in your shopping cart</h2>
             <h3>What would you like to do next?</h3>
             <div class="flex-inner-container">
-                <button onclick="window.location.href='cart.php'" id="submit-button" type="" class="btn-one"><i class="fas fa-arrow-circle-left"></i> MORE SHOPPING</button><br>
+                <button onclick="window.location.href='index.php'" id="submit-button" type="" class="btn-one"><i class="fas fa-arrow-circle-left"></i> MORE SHOPPING</button><br>
                 <button onclick="window.location.href='cart.php'" id="submit-button" type="" class="btn-two">LET's CHECKOUT <i class="fas fa-arrow-circle-right"></i></button><br>
             </div>
         </div>
