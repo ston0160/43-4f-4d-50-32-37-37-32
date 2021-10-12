@@ -22,8 +22,8 @@
   <!-- CATEGORY PAGE BANNER -->
   <div class="productPage-banner">
     <div class="productPage-bannerInformation">
-      <h1>Categories</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
+      <h1>Collection</h1>
+      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p> -->
     </div>
   </div>
 
