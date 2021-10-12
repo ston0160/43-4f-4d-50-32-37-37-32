@@ -34,7 +34,7 @@
 
 .categoryPage-productImage {
   position: relative;
-  max-width: 475px;
+  /* max-width: 400px; */
 }
 
 .categoryPage-productPrice {
@@ -49,13 +49,4 @@
   margin: 150px auto;
   flex-wrap: wrap;
   justify-content: center;
-}
-.column-24p {
-  flex: 24%;
-  max-width: 24%;
-  margin: 0 auto;
-  color: #737373;
-  border: 1px solid #737373;
-  padding: 3%;
-  text-align: center;
 }
