@@ -23,7 +23,6 @@
   <div class="productPage-banner">
     <div class="productPage-bannerInformation">
       <h1>Categories</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
     </div>
   </div>
 
@@ -41,8 +40,8 @@
     if ($result = mysqli_query($conn, $sql)) {
       if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-          // echo "<div class='categoryPage-productInformationCard'>";
-          echo "<div class='column-24p'>";
+          echo "<div class='categoryPage-productInformationCard'>";
+          // echo "<div class='column-24p'>";
           echo "<div class='categoryPage-productImage'>";
           echo "<a href='product.php?id=$row[prodID]'>";
           echo "<img src='$row[imageRef]'/>";
@@ -62,6 +61,7 @@
       if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
           echo "<div class='categoryPage-productInformationCard'>";
+          // echo "<div class='column-24p'>";
           echo "<div class='categoryPage-productImage'>";
           echo "<a href='product.php?id=$row[prodID]'>";
           echo "<img src='$row[imageRef]'/>";
