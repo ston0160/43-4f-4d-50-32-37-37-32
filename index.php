@@ -8,7 +8,7 @@
   <title>StarWars</title>
   <!-- Stylesheets-->
   <link rel="stylesheet" href="styles/index-style.css" />
-  <link rel="stylesheet" href="styles/footer-style.css" />
+  <link rel="stylesheet" href="styles/footer-style2.css" />
   <link rel="stylesheet" href="styles/header-style.css" />
   <link rel="icon" href="images/favicon_starwars.png" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
@@ -45,15 +45,11 @@
   </script>
 
   <div class="main-buttons">
-    <button class="button" id="rebellion-btn" onmouseover="newBannerJedi()" onmouseout="oldBanner()">
-     <a href="category.php?association=Light">
+    <button class="button" id="rebellion-btn" onmouseover="newBannerJedi()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Light'">
       <span>The Rebellion</span>
-     </a>
     </button>
-    <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()">
-      <a href="category.php?association=Dark">
-        <span>The Empire</span>
-      </a>
+    <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Dark'">
+      <span>The Empire</span>
     </button>
   </div>
   <div class="banner-text">
@@ -68,7 +64,7 @@
 
   <!-- FOOTER -->
   <?php
-  include 'inc/footer.php';
+  include 'inc/footer2.php';
   ?>
 </body>
 
