@@ -43,23 +43,24 @@
         "url('images/banner-homepage-2415x1200.png')";
     }
   </script>
-
-  <div class="main-buttons">
-    <button class="button" id="rebellion-btn" onmouseover="newBannerJedi()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Light'">
-      <span>The Rebellion</span>
-    </button>
-    <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Dark'">
-      <span>The Empire</span>
-    </button>
-  </div>
-  <div class="banner-text">
-    <h1>eCommerce Website</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-      ratione. Facilis id perspiciatis officia sint, enim assumenda numquam
-      cupiditate adipisci eveniet totam, asperiores fugiat labore cumque,
-      accusantium.
-    </p>
+  <div class="banner-content">
+    <div class="banner-text">
+      <h1>eCommerce Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
+        ratione. Facilis id perspiciatis officia sint, enim assumenda numquam
+        cupiditate adipisci eveniet totam, asperiores fugiat labore cumque,
+        accusantium.
+      </p>
+    </div>
+    <div class="main-buttons">
+      <button class="button" id="rebellion-btn" onmouseover="newBannerJedi()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Light'">
+        <span>The Rebellion</span>
+      </button>
+      <button class="button" id="empire-btn" onmouseover="newBannerEmpire()" onmouseout="oldBanner()" onclick="window.location.href='category.php?association=Dark'">
+        <span>The Empire</span>
+      </button>
+    </div>
   </div>
 
   <!-- FOOTER -->

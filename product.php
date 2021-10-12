@@ -64,53 +64,56 @@
       </div>
     </div>
 
-
-    <div class="productPage-productInformation">
-      <div class="productPage-productInformationTopSection">
-        <h1><?php echo "$product[prodName]"; ?></h1>
-        <p class="productPage-price">AUD$<?php echo "$product[price]"; ?></p>
-      </div>
-      <div class="productPage-productInformationMiddleSection">
-        <p><?php echo "$product[description]"; ?></p>
-      </div>
-      <div class="productPage-productInformationBottomSection">
-        <div class="productPage-buttonCart">
-          <p><button>Add to Cart</button></p>
+    <form action="addtoCart.php" method="GET">
+      <div class="productPage-productInformation">
+        <div class="productPage-productInformationTopSection">
+          <h1><?php echo "$product[prodName]"; ?></h1>
+          <p class="productPage-price">AUD$<?php echo "$product[price]"; ?></p>
         </div>
-        <div class="productPage-quantityInput">
-          <label class="productPage-quantityText">Quantity</label>
-          <input type="number" class="productPage-quantityTextInput" step="1" min="1" max="99" name="quantity" value="1">
+        <div class="productPage-productInformationMiddleSection">
+          <p><?php echo "$product[description]"; ?></p>
+        </div>
+        <div class="productPage-productInformationBottomSection">
+          <div class="productPage-buttonCart">
+            <p><button type="submit">Add to Cart</button></p>
+          </div>
+          <div class="productPage-quantityInput">
+            <input id="hideme" name="prodID" value=<?php echo "$product[prodID]"; ?>>
+            <label class="productPage-quantityText">Quantity</label>
+            <input type="number" class="productPage-quantityTextInput" step="1" min="1" max="99" name="quantity" value="1">
+          </div>
         </div>
       </div>
-    </div>
+    </form>
 
     <div class="productPage-productDetails">
       <h2>ADDITIONAL DETAILS & DIMENSIONS</h2>
-        <!-- <div class="productPage-productMaterials">  -->
-          <h3>Materials</h3>
-          <p>Fabric, Plastic, Resin</p>
-        <!-- </div>
+      <!-- <div class="productPage-productMaterials">  -->
+      <h3>Materials</h3>
+      <p>Fabric, Plastic, Resin</p>
+      <!-- </div>
         <div class="productPage-productSize"> -->
-          <h3>Product Size</h3>
-          <p>Height: 16.5" (41.9 cm)<br>Width: 13" (33 cm)<br>Depth: 9" (22.9 cm) *</p>
-        <!-- </div>
+      <h3>Product Size</h3>
+      <p>Height: 16.5" (41.9 cm)<br>Width: 13" (33 cm)<br>Depth: 9" (22.9 cm) *</p>
+      <!-- </div>
         <div class="productPage-productBoxSize"> -->
-          <h3>Box Size</h3>
-          <p>Height: 12.00" (30.5 cm)<br>Width: 17.50" (44.4 cm)<br>Depth: 20.00" (50.8 cm) *</p>
-        <!-- </div>
+      <h3>Box Size</h3>
+      <p>Height: 12.00" (30.5 cm)<br>Width: 17.50" (44.4 cm)<br>Depth: 20.00" (50.8 cm) *</p>
+      <!-- </div>
         <div class="productPage-productWeigth"> -->
-          <h3>Shipping Weight</h3>
-          <p>12.00 lbs (5.4 kg) **</p>
-        <!-- </div>
+      <h3>Shipping Weight</h3>
+      <p>12.00 lbs (5.4 kg) **</p>
+      <!-- </div>
           <br>
         <div class="productPage-productDeatilsFooter"> -->
-          <p><span id="measurementsDisclaimer">Size and weight are approximate values.</span></p>
-          <p>SKU-400369 UPC-747720250611<br>© & ™ Lucasfilm Ltd.</p>
-        </div>
+      <p><span id="measurementsDisclaimer">Size and weight are approximate values.</span></p>
+      <p>SKU-400369 UPC-747720250611<br>© & ™ Lucasfilm Ltd.</p>
     </div>
+  </div>
   </div>
 
   <!-- FOOTER -->
+  <div class="nav-spacer"></div>
   <?php
   require_once "inc/footer2.php"
   ?>
