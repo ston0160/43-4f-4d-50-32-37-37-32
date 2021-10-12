@@ -1,3 +1,9 @@
+<?php 
+session_start(); 
+echo session_id();
+echo "<br>";
+print_r($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,13 +80,21 @@
         <p><?php echo "$product[description]"; ?></p>
       </div>
       <div class="productPage-productInformationBottomSection">
-        <div class="productPage-buttonCart">
-          <p><button>Add to Cart</button></p>
-        </div>
-        <div class="productPage-quantityInput">
-          <label class="productPage-quantityText">Quantity</label>
-          <input type="number" class="productPage-quantityTextInput" step="1" min="1" max="99" name="quantity" value="1">
-        </div>
+
+        <!-- Illia added the form here for updating cart -->
+        <form action="update_cart.php" method="POST">
+
+          <div class="productPage-buttonCart">
+            <input name="prodName" value=<?php echo "$product[prodName]"; ?>>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <div class="productPage-quantityInput">
+            <label class="productPage-quantityText">Quantity</label>
+            <input type="number" class="productPage-quantityTextInput" step="1" min="1" max="99" name="quantity" value="1">
+          </div>
+
+        </form> 
+        <!-- END OF FORM   -- -- -- -- -- -- ------------>
       </div>
     </div>
 

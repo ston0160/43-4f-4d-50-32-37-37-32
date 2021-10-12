@@ -24,6 +24,7 @@
     </div>
     <!-- CART BUTTON -->
     <div class="column-33 right-cart">
+      <a href="cart.php">
       <button class="addToCart" onclick="openNav()"><b class="fas fa-shopping-cart"></b> Cart</button>
     </div>
   </row>
