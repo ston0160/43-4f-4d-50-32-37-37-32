@@ -41,9 +41,10 @@ session_destroy();
             <h1>THANK YOU</h1>
             <h2><?php echo "$customer[name]"; ?></h1>
                 <p>Sit back and relax, your Starwars Collectible Figurine is flying your way!</p>
-                <button id="submit-button" type="" class="btn-one">GOT IT</button><br><br><br>
+                <form action="index.php">
+                <button id="submit-button" type="submit"  class="btn-one">GOT IT</button><br><br><br>
+                </form>
                 <p>An order confirmation was sent to <b><?php echo "$customer[email]" ?></b></p>
-                <p>Your order was confirmed at <b>$date-time.</b></p><br><br>
                 <p>Questions?</p>
                 <p><i class="fas fa-phone"></i> Call us at 08 8201 2345</p>
         </div>
