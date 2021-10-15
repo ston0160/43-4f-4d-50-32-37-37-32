@@ -54,13 +54,13 @@
 
     <div class="productPage-imageContentArea">
       <div class="productPage-mainImage">
-        <?php echo "<img id='MainImg' src='$productimage[0]' alt='Front' style='width:100%'>" ?>
+        <?php echo "<img id='MainImg' src='$productimage[0]' alt='Main Image' style='width:100%'>" ?>
       </div>
 
       <div class="productPage-subImages">
-        <?php echo "<img class='thumb_image' src='$productimage[0]' alt='Front' style='width:25%'>" ?>
-        <?php echo "<img class='thumb_image' src='$productimage[1]' alt='Side' style='width:25%'>" ?>
-        <?php echo "<img class='thumb_image' src='$productimage[2]' alt='Bottom' style='width:25%'>" ?>
+        <?php echo "<img class='thumb_image' src='$productimage[0]' alt='Image #1' style='width:25%'>" ?>
+        <?php echo "<img class='thumb_image' src='$productimage[1]' alt='Image #2' style='width:25%'>" ?>
+        <?php echo "<img class='thumb_image' src='$productimage[2]' alt='Image #3' style='width:25%'>" ?>
       </div>
     </div>
 
