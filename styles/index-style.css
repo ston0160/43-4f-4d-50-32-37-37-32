@@ -6,14 +6,16 @@
   background-size: cover;
   justify-content: center;
   width: 100%;
-  min-height: 1200px;
+  min-height: 1400px;
   transition: 1s;
+}
+.banner-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
 .main-buttons {
   display: flex;
-  position: absolute;
-  top: 70%;
-  left: 10%;
 }
 .button {
   border-radius: 4px;
@@ -62,8 +64,8 @@
 }
 .banner-text {
   color: #fff;
-  display: flexbox;
-  position: absolute;
+  /* display: flexbox; */
+  /* position: absolute; */
   top: 35%;
   left: 10%;
   max-width: 700px;
