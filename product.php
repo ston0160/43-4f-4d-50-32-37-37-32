@@ -75,7 +75,7 @@
       </div>
       <div class="productPage-productInformationBottomSection">
         <div class="productPage-buttonCart">
-          <p><button>Add to Cart</button></p>
+          <p><button onclick=<?php "$_SESSION['prodID'] = '$id';"?>>Add to Cart</button></p>
         </div>
         <div class="productPage-quantityInput">
           <label class="productPage-quantityText">Quantity</label>
