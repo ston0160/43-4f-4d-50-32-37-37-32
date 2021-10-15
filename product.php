@@ -86,6 +86,7 @@
       </div>
     </form>
 
+    <!-- Richard Product details - dimension -->
     <div class="productPage-productDetails">
       <h2>ADDITIONAL DETAILS & DIMENSIONS</h2>
       <!-- <div class="productPage-productMaterials">  -->
@@ -114,8 +115,7 @@
 
   <!-- FOOTER -->
   <div class="nav-spacer"></div>
-
-<?php
+  <?php
   require_once "inc/footer2.php"
   ?>
   <?php
