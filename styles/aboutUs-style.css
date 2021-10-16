@@ -1,0 +1,33 @@
+body {
+    padding: 8px;
+    font-family: lato, Verdana, sans-serif;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.aboutUsPage-bannerInformation {
+box-shadow: 5px 10px rgba(107, 97, 97, 0.603);
+border: 1px solid rgba(107, 97, 97, 0.603);
+padding: 1%;
+max-width: 1000px;
+margin: 5% auto 2.5%;
+text-align: center;
+font-family: arial;
+position: relative;
+border-radius: 80px;
+
+/* Work in Progress */
+
+color: white;
+text-shadow: 0 0 55px black, 0 1px 0 rgba(0,0,0, .25);
+font-size: 30px;
+}
+
+.flex-container {
+    background-color: rgba(136, 41, 41, 0.849);
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: none;
+  }
