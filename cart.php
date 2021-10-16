@@ -2,8 +2,8 @@
 session_start();
 require_once "inc/dbconn.php";
 ?>
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="styles/cart-style.css">
@@ -46,6 +46,7 @@ require_once "inc/dbconn.php";
                                 $result = mysqli_query($conn, $sqlimage);
                                 $productImage = mysqli_fetch_row($result);
                                 $total += ($product['price'] * $val);
+                                $totalItems += $val;
                 ?>
                                 <div class="cart-items row-inner">
                                     <div class="item-image column-20vh">
@@ -67,24 +68,23 @@ require_once "inc/dbconn.php";
                         }
                     }
                 }
+                $_SESSION['total'] = $total;
+                $_SESSION['totalItems'] = $totalItems;
                 ?>
 
             </div>
         </div>
         <div class="column-25vh">
             <div class="container">
-                <h4>CART SUMMARY
+                <h4>TOTAL ITEMS
                     <span class="price" style="color:white; font-size: 20px;">
                         <i class="fa fa-shopping-cart"></i>
-                        <b>4</b>
+                        <b><?php echo $_SESSION['totalItems']; ?></b>
                     </span>
                 </h4>
-                <p><a class="order-summary" href="#">Sub-total</a> <span class="price">$15</span></p>
-                <p><a class="order-summary" href="#">GST</a> <span class="price">$5</span></p>
-                <p><a class="order-summary" href="#">Shipping Cost</a> <span class="price">$8</span></p>
                 <hr>
-                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo "$total"; ?></b></span></p>
-                <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo $_SESSION['total']; ?></b></span></p>
+                <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
             </div>
         </div>
     </div>
