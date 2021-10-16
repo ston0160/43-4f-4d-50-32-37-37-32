@@ -13,7 +13,7 @@ require_once "inc/dbconn.php";
     <meta charset="utf-8" />
     <meta name="author" content="Illia Sheshyn" />
     <meta name="description" content="Shopping Cart" />
-    <title>Shopping Cart</title>
+    <title>Shopping Cart | Star Wars Collectables</title>
 </head>
 
 <body>

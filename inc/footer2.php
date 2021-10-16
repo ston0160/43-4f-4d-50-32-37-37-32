@@ -4,7 +4,7 @@
     <div class="footer-row">
       <div class="column-50">
         <h6>About Our Website</h6>
-        <p class="text-justify">This website is a functional eCommerce Solutions website submitted for grading for the Topic COMP2772 Web-Based Systems Development under the coordination of Professor Richard Leibrandt. The members of the group consist of Illya Seshin, Cody slattery, Richard Stone and Jim Labilles.</p>
+        <p class="text-justify">This website is a functional eCommerce Solutions website submitted for grading for the Topic COMP2772 Web-Based Systems Development under the coordination of Professor Richard Leibrandt. The members of the group consist of Illya Seshin, Cody Slattery, Richard Stone Reyes and Jim Labilles.</p>
       </div>
 
       <div class="column-25">
