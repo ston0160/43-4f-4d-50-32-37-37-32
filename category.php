@@ -67,13 +67,13 @@
           echo "<div class='categoryPage-productImage'>";
           echo "<a href='product.php?id=$row[prodID]'>";
           echo "<img src='$row[imageRef]'/>";
-          echo "</a>";
+          
           echo "<div class='categoryPage-productData'>";
           echo "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
           echo "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
           echo "</div>";
           echo "</div>";
-          echo "</div>";
+          echo "</div>";echo "</a>";
         }
         mysqli_free_result($result);
       }
