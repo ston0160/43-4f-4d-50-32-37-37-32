@@ -34,9 +34,6 @@ body {
   background-color: white;
   box-shadow: 5px 10px rgba(224, 217, 217, 0.822);
   border: 3px solid gray;
-
-  /* testing */
-  /* background-color: white; */
 }
 
 .productPage-subImages {
@@ -45,10 +42,6 @@ body {
   left: 17%;
   max-width: 40%;
   max-width: 475px;
-
-  /* testing */
-  /* background-color: greenyellow;
-    outline-style: solid; */
 }
 
 .productPage-subImages :hover {
@@ -65,9 +58,6 @@ body {
   padding: 5px;
   margin: 0px 5px;
   background-color: white;
-
-  /* testing */
-  /* background-color: blue; */
 }
 
 .productPage-productInformation {
@@ -82,27 +72,21 @@ body {
   margin-top: 20%;
   text-align: center;
   font-family: arial;
-  
+
   border-radius: 8px;
   background-color: white;
   position: relative;
   right: -75%;
-
-  /* testing */
-  /* background-color: rgb(185, 35, 223); */
 }
 
 .productPage-price {
   color: rgb(37, 141, 12);
   font-size: 22px;
   font-weight: bold;
-
-  /* testing */
-  /* background-color: orange; */
 }
 
 .productPage-productInformationBottomSection {
-  display:inline-flexbox;
+  display: inline-flexbox;
   flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -119,7 +103,7 @@ body {
   font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
-  float:left;
+  float: left;
   margin-left: 10px;
 }
 
@@ -130,9 +114,6 @@ body {
 .productPage-quantityInput {
   margin-top: 15px;
   margin-left: 140px;
-
-  /* testing */
-  /* background-color: greenyellow; */
 }
 
 .productPage-quantityText {
@@ -143,8 +124,6 @@ body {
 }
 
 .productPage-quantityTextInput {
-  /* border-style: solid;
-    border-color: transparent; */
   padding: 10px 10px;
   color: black;
   background-color: white;
