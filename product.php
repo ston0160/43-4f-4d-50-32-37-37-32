@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Product Page</title>
+  <title>Product Page | Star Wars Collectables</title>
   <meta charset="UTF-8">
   <meta name="Richard" content="Star Wars">
   <link rel="stylesheet" href="styles/product-style.css" />
   <link rel="stylesheet" href="styles/header-nav-style.css">
   <link rel="stylesheet" href="styles/footer-style2.css">
+  <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
   <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
   <script src="" defer></script>
 </head>
@@ -86,29 +87,19 @@
       </div>
     </form>
 
-    <div class="productPage-productDetails">
+    <!-- <div class="productPage-productDetails">
       <h2>ADDITIONAL DETAILS & DIMENSIONS</h2>
-      <!-- <div class="productPage-productMaterials">  -->
-      <h3>Materials</h3>
-      <p>Fabric, Plastic, Resin</p>
-      <!-- </div>
-        <div class="productPage-productSize"> -->
-      <h3>Product Size</h3>
-      <p>Height: 16.5" (41.9 cm)<br>Width: 13" (33 cm)<br>Depth: 9" (22.9 cm) *</p>
-      <!-- </div>
-        <div class="productPage-productBoxSize"> -->
-      <h3>Box Size</h3>
-      <p>Height: 12.00" (30.5 cm)<br>Width: 17.50" (44.4 cm)<br>Depth: 20.00" (50.8 cm) *</p>
-      <!-- </div>
-        <div class="productPage-productWeigth"> -->
-      <h3>Shipping Weight</h3>
-      <p>12.00 lbs (5.4 kg) **</p>
-      <!-- </div>
-          <br>
-        <div class="productPage-productDeatilsFooter"> -->
-      <p><span id="measurementsDisclaimer">Size and weight are approximate values.</span></p>
-      <p>SKU-400369 UPC-747720250611<br>© & ™ Lucasfilm Ltd.</p>
-    </div>
+        <h3>Materials</h3>
+          <p>Fabric, Plastic, Resin</p>
+        <h3>Product Size</h3>
+          <p>Height: 16.5" (41.9 cm)<br>Width: 13" (33 cm)<br>Depth: 9" (22.9 cm) *</p>
+        <h3>Box Size</h3>
+          <p>Height: 12.00" (30.5 cm)<br>Width: 17.50" (44.4 cm)<br>Depth: 20.00" (50.8 cm) *</p>
+        <h3>Shipping Weight</h3>
+          <p>12.00 lbs (5.4 kg) **</p>
+        <p><span id="measurementsDisclaimer">Size and weight are approximate values.</span></p>
+        <p>SKU-400369 UPC-747720250611<br>© & ™ Lucasfilm Ltd.</p>
+    </div> -->
   </div>
   </div>
 

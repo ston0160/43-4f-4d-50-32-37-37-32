@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>Star Wars - Category</title>
+  <title>Category | Star Wars Collectables</title>
   <meta charset="UTF-8" />
   <meta name="author" content="" />
   <link rel="stylesheet" href="styles/category-style.css">
   <link rel="stylesheet" href="styles/header-nav-style.css">
   <link rel="stylesheet" href="styles/footer-style2.css">
+  <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
   <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,10 +23,7 @@
   <!-- CATEGORY PAGE BANNER -->
   <div class="productPage-banner">
     <div class="productPage-bannerInformation">
-
       <h1>Collection</h1>
-      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p> -->
-
     </div>
   </div>
 
@@ -47,13 +45,13 @@
           echo "<div class='categoryPage-productImage'>";
           echo "<a href='product.php?id=$row[prodID]'>";
           echo "<img src='$row[imageRef]'/>";
-          echo "</a>";
           echo "<div class='categoryPage-productData'>";
           echo "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
           echo "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
           echo "</div>";
           echo "</div>";
           echo "</div>";
+          echo "</a>";
         }
         mysqli_free_result($result);
       }
@@ -67,13 +65,13 @@
           echo "<div class='categoryPage-productImage'>";
           echo "<a href='product.php?id=$row[prodID]'>";
           echo "<img src='$row[imageRef]'/>";
-          echo "</a>";
           echo "<div class='categoryPage-productData'>";
           echo "<h1 class='categoryPage-productName'>$row[prodName]</h1>";
           echo "<p class='categoryPage-productPrice'>AUD$$row[price]</p>";
           echo "</div>";
           echo "</div>";
           echo "</div>";
+          echo "</a>";
         }
         mysqli_free_result($result);
       }
