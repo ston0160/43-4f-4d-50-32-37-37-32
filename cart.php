@@ -25,7 +25,6 @@ require_once "inc/dbconn.php";
     <!-- PAGE CONTENT -->
     <div class="checkout-banner">
         <h1>Shopping Cart</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
     </div>
     <div class="row-main">
         <div class="column-75vh">
@@ -55,13 +54,13 @@ require_once "inc/dbconn.php";
                                     </div>
                                     <div class="item-desc column-20vh">
                                         <h2><?php echo $product['prodName']; ?></h2>
-                                        <h3>$ <?php echo $product['price'];  ?></h3>
+                                        <h3>AUD$ <?php echo $product['price'];  ?></h3>
                                     </div>
                                     <div class="item-qty column-20vh">
                                         <h2><?php echo $val; ?></h2>
                                     </div>
                                     <div class="item-sub column-20vh">
-                                        <h2>$ <?php echo ($product['price'] * $val);  ?></h2>
+                                        <h2>AUD$ <?php echo ($product['price'] * $val);  ?></h2>
                                     </div>
                                 </div>
                 <?php
@@ -84,7 +83,7 @@ require_once "inc/dbconn.php";
                     </span>
                 </h4>
                 <hr>
-                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo $_SESSION['total']; ?></b></span></p>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
                 <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
             </div>
         </div>

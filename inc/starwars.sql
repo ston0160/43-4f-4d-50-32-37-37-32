@@ -115,3 +115,8 @@ INSERT INTO ProductImage VALUES ("Nine", "images/DARSID3.png");
 INSERT INTO ProductImage VALUES ("Ten", "images/ATAT1.png");
 INSERT INTO ProductImage VALUES ("Ten", "images/ATAT2.png");
 INSERT INTO ProductImage VALUES ("Ten", "images/ATAT3.png");
+
+INSERT INTO Customer(name, address, suburb, postCode, state, email) VALUES ("Bob Hawke", "123 Evergreen Terrace", "Springfield", "5000", "SA", "Hawke@gmail.com");
+INSERT INTO CreditCard(cardNo, nameOnCard, expiryMonth, expiryYear, cvv) VALUES ("1234 1234 1234 1234", "Bob Hawke", "Jan", "2022", "123");
+INSERT INTO PurchaseOrder(custID, totalPrice) VALUES (1, 99.99);
+INSERT INTO PurchasedProduct(custID, orderID, orderedProduct, quantity) VALUES (1, 1, "One", 3);

@@ -37,7 +37,7 @@
     $association = htmlspecialchars(($_GET["association"]));
     $sql = "SELECT * FROM product, productimage WHERE product.prodID = productimage.prodID AND category = '$category' AND imageRef LIKE '%1.png';";
     $assocsql = "SELECT * FROM product, productimage WHERE product.prodID = productimage.prodID AND association = '$association' AND imageRef LIKE '%1.png';";
-
+ 
     if ($result = mysqli_query($conn, $sql)) {
       if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
