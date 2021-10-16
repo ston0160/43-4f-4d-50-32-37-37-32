@@ -21,7 +21,7 @@
       <div class="column-25">
         <h6>Quick Links</h6>
         <ul class="footer-links">
-          <li><a href="category.php?association=Light">Category Page</a></li>
+          <li><a href="category.php?association=light">Category Page</a></li>
           <li><a href="cart.php">Cart Page</a></li>
           <li><a href="product.php?id=One">Product Page (Example)</a></li>
           <li><a href="checkout.php">Checkout</a></li>

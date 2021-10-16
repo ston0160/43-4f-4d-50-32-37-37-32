@@ -25,7 +25,6 @@ require_once "inc/dbconn.php";
     <!-- PAGE CONTENT -->
     <div class="checkout-banner">
         <h1>Shopping Cart</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
     </div>
     <div class="row-main">
         <div class="column-75vh">

@@ -30,7 +30,7 @@ session_start();
 
     // $custIDCount = $custIDCount + 1;
     // $orderNoCount = $orderNoCount + 1;
-    $query = "INSERT INTO customer (name, address, suburb, postCode, state, email) VALUES (?, ?, ?, ?, ?, ?);";
+    $query = "INSERT INTO customer(name, address, suburb, postCode, state, email) VALUES (?, ?, ?, ?, ?, ?);";
     
     $stmt = mysqli_prepare($conn, $query); 
     
