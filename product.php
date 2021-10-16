@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Product Page</title>
+  <title>Product Page | Star Wars Collectables</title>
   <meta charset="UTF-8">
   <meta name="Richard" content="Star Wars">
   <link rel="stylesheet" href="styles/product-style.css" />

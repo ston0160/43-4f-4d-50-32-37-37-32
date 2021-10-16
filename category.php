@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Star Wars - Category</title>
+  <title>Category | Star Wars Collectables</title>
   <meta charset="UTF-8" />
   <meta name="author" content="" />
   <link rel="stylesheet" href="styles/category-style.css">
@@ -22,10 +22,7 @@
   <!-- CATEGORY PAGE BANNER -->
   <div class="productPage-banner">
     <div class="productPage-bannerInformation">
-
       <h1>Collection</h1>
-      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p> -->
-
     </div>
   </div>
 

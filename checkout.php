@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Star Wars</title>
+    <title>Checkout | Star Wars Collectables</title>
     <meta charset="UTF-8" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="styles/checkout-style.css">
