@@ -1,11 +1,11 @@
-/* body {
+ body {
   padding: 8px;
   font-family: lato, Verdana, sans-serif;
 }
 
 * {
   box-sizing: border-box;
-} */
+}
 
 a, a:active, a:visited, a:focus {
   text-decoration:none;

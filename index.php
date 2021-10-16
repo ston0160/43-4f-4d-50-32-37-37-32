@@ -45,12 +45,11 @@
   </script>
   <div class="banner-content">
     <div class="banner-text">
-      <h1>eCommerce Website</h1>
+      <h1>Quality Star Wars Colletables</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-        ratione. Facilis id perspiciatis officia sint, enim assumenda numquam
-        cupiditate adipisci eveniet totam, asperiores fugiat labore cumque,
-        accusantium.
+        An Adelaide-based shop specialized in Star Wars Figurines.
+        We have a wide variety of figurines ranging from the Rise of the Empire era to the New Jedi Order.
+        Shipping Australia Wide.
       </p>
     </div>
     <div class="main-buttons">
