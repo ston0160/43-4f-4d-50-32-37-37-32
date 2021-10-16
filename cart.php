@@ -54,13 +54,13 @@ require_once "inc/dbconn.php";
                                     </div>
                                     <div class="item-desc column-20vh">
                                         <h2><?php echo $product['prodName']; ?></h2>
-                                        <h3>$ <?php echo $product['price'];  ?></h3>
+                                        <h3>AUD$ <?php echo $product['price'];  ?></h3>
                                     </div>
                                     <div class="item-qty column-20vh">
                                         <h2><?php echo $val; ?></h2>
                                     </div>
                                     <div class="item-sub column-20vh">
-                                        <h2>$ <?php echo ($product['price'] * $val);  ?></h2>
+                                        <h2>AUD$ <?php echo ($product['price'] * $val);  ?></h2>
                                     </div>
                                 </div>
                 <?php
@@ -83,7 +83,7 @@ require_once "inc/dbconn.php";
                     </span>
                 </h4>
                 <hr>
-                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$ <?php echo $_SESSION['total']; ?></b></span></p>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
                 <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
             </div>
         </div>

@@ -127,7 +127,7 @@
                     </span>
                 </h4>
                 <hr>
-                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b><?php echo $_SESSION['total'];?></b></span></p>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total'];?></b></span></p>
                 <button form="order" id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
             </div>
         </div>
