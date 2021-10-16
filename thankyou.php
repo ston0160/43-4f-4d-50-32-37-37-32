@@ -14,6 +14,7 @@ session_destroy();
     <link rel="stylesheet" href="styles/thankyou-style.css">
     <link rel="stylesheet" href="styles/header-nav-style.css">
     <link rel="stylesheet" href="styles/footer-style2.css">
+    <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
     <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
 </head>
 

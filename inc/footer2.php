@@ -35,7 +35,7 @@
     <div class="footer-row">
       <div class="column-50">
         <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
-          <a href="#">GROUP-20 (the 'authors')</a>.
+          <a href="aboutUs.php">GROUP-20 (the 'authors')</a>.
         </p>
       </div>
       <div class="column-25">
