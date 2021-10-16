@@ -23,8 +23,8 @@
         <ul class="footer-links">
           <li><a href="category.php?association=Light">Category Page</a></li>
           <li><a href="cart.php">Cart Page</a></li>
-          <li><a href="#">Product Page</a></li>
-          <li><a href="#">Order Summary</a></li>
+          <li><a href="product.php?id=One">Product Page (Example)</a></li>
+          <li><a href="checkout.php">Checkout</a></li>
           <li><a href="#">Sitemap</a></li>
         </ul>
       </div>
