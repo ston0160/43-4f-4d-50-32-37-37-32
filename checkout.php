@@ -4,12 +4,13 @@
 <html lang="en">
 
 <head>
-    <title>Star Wars</title>
+    <title>Checkout | Star Wars Collectables</title>
     <meta charset="UTF-8" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="styles/checkout-style.css">
     <link rel="stylesheet" href="styles/header-nav-style.css">
     <link rel="stylesheet" href="styles/footer-style2.css">
+    <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
     <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
     <script src="" defer></script>
 </head>
@@ -23,18 +24,17 @@
     <!-- START OF CHECKOUT PAGE CONTENT -->
     <div class="checkout-banner">
         <h1>Ready to Checkout Your Items?</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit tempora explicabo voluptatem error pariatur omnis.</p>
     </div>
     <div class="row-main">
         <div class="column-75vh">
             <div class="container">
-                <form action="/action_page.php">
+                <form action="thankyou.php" method="POST" id="order">
 
                     <div class="row-inner">
                         <div class="column-50vh">
                             <h3>Your Shipping Details</h3>
-                            <label class="details" for="fname"> Full Name</label>
-                            <input class="details" type="text" id="firstname" name="firstname" placeholder="Scott Morrison" required>
+                            <label class="details" for="name"> Full Name</label>
+                            <input class="details" type="text" id="name" name="name" placeholder="Scott Morrison" required>
                             <label class="details" for="email"> Email</label>
                             <input class="details" type="text" id="email" name="email" placeholder="scott@yourpm.com" required>
                             <label class="details" for="adr"> Address</label>
@@ -69,8 +69,8 @@
 
                             <label class="details" for="cardname">Name on Card</label>
                             <input class="details" type="text" id="cardname" name="cardname" placeholder="Scott Morrison" required>
-                            <label class="details" for="cardNo">Credit card number</label>
-                            <input class="details" type="text" id="cardNo" name="cardNo" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                            <label class="details" for="cardno">Credit card number</label>
+                            <input class="details" type="text" id="cardno" name="cardno" placeholder="xxxx-xxxx-xxxx-xxxx" required>
 
 
                             <div class="row-inner">
@@ -120,18 +120,15 @@
 
         <div class="column-25vh">
             <div class="container">
-                <h4>ORDER SUMMARY
+                <h4>TOTAL ITEMS
                     <span class="price" style="color:white; font-size: 20px;">
                         <i class="fa fa-shopping-cart"></i>
-                        <b>4</b>
+                        <b><?php echo $_SESSION['totalItems'];?></b>
                     </span>
                 </h4>
-                <p><a class="order-summary" href="#">Sub-total</a> <span class="price">$15</span></p>
-                <p><a class="order-summary" href="#">GST</a> <span class="price">$5</span></p>
-                <p><a class="order-summary" href="#">Shipping Cost</a> <span class="price">$8</span></p>
                 <hr>
-                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>$30</b></span></p>
-                <button onclick="window.location.href='thankyou.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
+                <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total'];?></b></span></p>
+                <button form="order" id="submit-button" type="submit" value="Place Order" class="btn-one">Place Order</button>
             </div>
         </div>
     </div>

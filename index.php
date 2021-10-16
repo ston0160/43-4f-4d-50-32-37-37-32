@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StarWars</title>
+  <title>Star Wars Collectables</title>
   <!-- Stylesheets-->
   <link rel="stylesheet" href="styles/index-style.css" />
   <link rel="stylesheet" href="styles/footer-style2.css" />
   <link rel="stylesheet" href="styles/header-style.css" />
-  <link rel="icon" href="images/favicon_starwars.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
   <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,12 +45,11 @@
   </script>
   <div class="banner-content">
     <div class="banner-text">
-      <h1>eCommerce Website</h1>
+      <h1>Quality Star Wars Collectables</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
-        ratione. Facilis id perspiciatis officia sint, enim assumenda numquam
-        cupiditate adipisci eveniet totam, asperiores fugiat labore cumque,
-        accusantium.
+        An Adelaide-based shop specialized in Star Wars Figurines.
+        We have a wide variety of figurines ranging from the Rise of the Empire era to the New Jedi Order.
+        Shipping Australia Wide.
       </p>
     </div>
     <div class="main-buttons">

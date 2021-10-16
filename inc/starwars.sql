@@ -17,7 +17,7 @@ PRIMARY KEY (custID)
 ); 
 
 CREATE TABLE CreditCard (
-custID			INT(5) NOT NULL,
+custID			INT(5) NOT NULL AUTO_INCREMENT,
 cardNo			VARCHAR(19) NOT NULL,
 nameOnCard      VARCHAR(30),
 expiryMonth		VARCHAR(3),
@@ -48,7 +48,6 @@ FOREIGN KEY (prodID) REFERENCES Product(prodID)
 CREATE TABLE PurchaseOrder (
 custID			INT(5) NOT NULL,
 orderID			INT(5) NOT NULL AUTO_INCREMENT,
-orderedProduct	INT(5),
 totalPrice		FLOAT(5,2),
 PRIMARY KEY (orderID),
 FOREIGN KEY (custID) REFERENCES Customer(custID)
@@ -57,13 +56,14 @@ FOREIGN KEY (custID) REFERENCES Customer(custID)
 CREATE TABLE PurchasedProduct (
 custID			INT(5) NOT NULL,
 orderID			INT(5) NOT NULL,
-orderedProduct	INT(5) NOT NULL,
+orderedProduct	VARCHAR(5) NOT NULL,
 quantity		INT(5),
 PRIMARY KEY (custID, orderID, orderedProduct),
 FOREIGN KEY (custID, orderID) REFERENCES PurchaseOrder(custID, orderID)
 );
 
 ALTER TABLE Customer AUTO_INCREMENT=1;
+ALTER TABLE CreditCard AUTO_INCREMENT=1;
 ALTER TABLE PurchaseOrder AUTO_INCREMENT=1;
 
 CREATE user IF NOT EXISTS dbadmin;
@@ -116,4 +116,7 @@ INSERT INTO ProductImage VALUES ("Ten", "images/ATAT1.png");
 INSERT INTO ProductImage VALUES ("Ten", "images/ATAT2.png");
 INSERT INTO ProductImage VALUES ("Ten", "images/ATAT3.png");
 
-INSERT INTO Customer VALUES (1, "John Smith", "123 Fake Street", "Adelaide", "5000", "SA", "Johnsmith@hotmail.com");
+INSERT INTO Customer(name, address, suburb, postCode, state, email) VALUES ("Bob Hawke", "123 Evergreen Terrace", "Springfield", "5000", "SA", "Hawke@gmail.com");
+INSERT INTO CreditCard(cardNo, nameOnCard, expiryMonth, expiryYear, cvv) VALUES ("1234 1234 1234 1234", "Bob Hawke", "Jan", "2022", "123");
+INSERT INTO PurchaseOrder(custID, totalPrice) VALUES (1, 99.99);
+INSERT INTO PurchasedProduct(custID, orderID, orderedProduct, quantity) VALUES (1, 1, "One", 3);
