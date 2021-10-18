@@ -7,7 +7,7 @@
       <span><button class="menubtn" onclick="openNav()">☰ Menu</button></span>
       <script>
         function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("mySidebar").style.width = "290px"; //Illia: changed from 250px to fit the 'Rebellion Vehicles' text
           document.getElementById("menu").style.marginLeft = "250px";
         }
 
