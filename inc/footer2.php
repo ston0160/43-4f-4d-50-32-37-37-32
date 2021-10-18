@@ -44,9 +44,9 @@
 
       <div class="column-25">
         <ul class="social-icons">
-          <li><a class="facebook" href="https://www.facebook.com/cachenlo"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="twitter" href="https://www.facebook.com/cachenlo"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="linkedin" href="https://www.facebook.com/cachenlo"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="facebook" href="https://www.facebook.com/StarWarsCollectablesAU"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/StarWarsAUD"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>

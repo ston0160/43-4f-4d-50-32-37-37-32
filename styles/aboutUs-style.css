@@ -25,9 +25,10 @@ text-shadow: 0 0 55px black, 0 1px 0 rgba(0,0,0, .25);
 font-size: 30px;
 }
 
-.flex-container {
-    background-color: rgba(136, 41, 41, 0.849);
+.aboutUs-flex-container {
+    background-color: rgba(233, 6, 6, 0.849);
     cursor: pointer;
     color: aliceblue;
     text-decoration: none;
+    width: 100px;
   }
