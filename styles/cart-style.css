@@ -202,6 +202,7 @@ h4 {
   background-color: #fff;
   border-radius: 4px;
   margin: 5px auto;
+  margin-right: 1rem;
 }
 .column-20vh {
   flex: 20%;
@@ -211,4 +212,42 @@ h4 {
   align-items: center;
   align-content: center;
   text-align: center;
+}
+
+.remove-button {
+  font-size: 20px;
+  background-color: #111;
+  color: white;
+  padding: 15px 26px;
+  border: none;
+  text-decoration: none;
+  z-index: 2;
+  top: 30px;
+  right: 100px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 3rem;
+}
+
+.remove-button:hover {
+  padding-right: 25px;
+  color: rgb(219, 18, 18);
+  box-shadow: 0 5px 15px rgb(219, 18, 18);
+  transition: 0.5s;
+}
+
+
+.cart-quantityTextInput {
+  padding: 10px 10px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  width: 40%;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-right: 0px;
+}
+
+#hideme {
+  display: none;
 }
