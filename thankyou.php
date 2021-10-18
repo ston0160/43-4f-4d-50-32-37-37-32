@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require_once 'inc/lock.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,17 +23,15 @@ session_start();
     <?php
     require_once "inc/header-nav.php";
     require_once "inc/dbconn.php";
-    
-    
 
     // Insert into DB Code Start
 
     // $custIDCount = $custIDCount + 1;
     // $orderNoCount = $orderNoCount + 1;
     $query = "INSERT INTO customer(name, address, suburb, postCode, state, email) VALUES (?, ?, ?, ?, ?, ?);";
-    
-    $stmt = mysqli_prepare($conn, $query); 
-    
+
+    $stmt = mysqli_prepare($conn, $query);
+
     if ($stmt) {
         mysqli_stmt_bind_param($stmt, "ssssss", $_POST['name'], $_POST['address'], $_POST['suburb'], $_POST['postcode'], $_POST['state'], $_POST['email']);
 
@@ -43,11 +41,11 @@ session_start();
     }
 
     $cardquery = "INSERT INTO creditcard(cardNo, nameOnCard, expiryMonth, expiryYear, cvv) VALUES (?, ?, ?, ?, ?);";
-    
-    $stmt = mysqli_prepare($conn, $cardquery); 
-    
+
+    $stmt = mysqli_prepare($conn, $cardquery);
+
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "sssss", $_POST['cardno'], $_POST['cardname'], $_POST['month'], $_POST['year'], $_POST['cvv']);
+        mysqli_stmt_bind_param($stmt, "sssss", crypt($_POST['cardno'], $salt), $_POST['cardname'], $_POST['month'], $_POST['year'], crypt($_POST['cvv'], $salt));
 
         mysqli_stmt_execute($stmt);
 
@@ -65,11 +63,11 @@ session_start();
     }
     $custID = $customer['custID'];
 
-    
+
     $orderquery = "INSERT INTO purchaseorder(custID, totalPrice) VALUES (?, ?);";
-    
-    $stmt = mysqli_prepare($conn, $orderquery); 
-    
+
+    $stmt = mysqli_prepare($conn, $orderquery);
+
     if ($stmt) {
         mysqli_stmt_bind_param($stmt, "ii", $customer['custID'], $_SESSION['total']);
 
@@ -78,7 +76,7 @@ session_start();
         mysqli_stmt_close($stmt);
     }
 
-    
+
     $sql = "SELECT * FROM purchaseorder WHERE custID = '$custID'";
 
     if ($result = mysqli_query($conn, $sql)) {
@@ -103,9 +101,9 @@ session_start();
 
 
             $orderproductquery = "INSERT INTO purchasedproduct(custID, orderID, orderedProduct, quantity) VALUES (?, ?, ?, ?);";
-    
-            $stmt = mysqli_prepare($conn, $orderproductquery); 
-            
+
+            $stmt = mysqli_prepare($conn, $orderproductquery);
+
             if ($stmt) {
                 mysqli_stmt_bind_param($stmt, "iisi", $customer['custID'], $customerOrder['orderID'], $product['prodID'], $val);
 
@@ -118,7 +116,7 @@ session_start();
 
     // Insert into DB Code Finish
 
-    
+
     ?>
     <div class="nav-spacer"></div>
 
@@ -129,7 +127,7 @@ session_start();
             <h2><?php echo "$customer[name]"; ?></h1>
                 <p>Sit back and relax, your Starwars Collectible Figurine is flying your way!</p>
                 <form action="index.php">
-                <button id="submit-button" type="submit"  class="btn-one">GOT IT</button><br><br><br>
+                    <button id="submit-button" type="submit" class="btn-one">GOT IT</button><br><br><br>
                 </form>
                 <p>An order confirmation was sent to <b><?php echo "$customer[email]" ?></b></p>
                 <p>Questions?</p>

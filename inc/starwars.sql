@@ -18,11 +18,11 @@ PRIMARY KEY (custID)
 
 CREATE TABLE CreditCard (
 custID			INT(5) NOT NULL AUTO_INCREMENT,
-cardNo			VARCHAR(19) NOT NULL,
+cardNo			VARCHAR(200) NOT NULL,
 nameOnCard      VARCHAR(30),
 expiryMonth		VARCHAR(3),
 expiryYear		VARCHAR(4),
-cvv				VARCHAR(3),
+cvv				VARCHAR(200),
 PRIMARY KEY (custID, cardNo),
 FOREIGN KEY (custID) REFERENCES Customer(custID)
 );
