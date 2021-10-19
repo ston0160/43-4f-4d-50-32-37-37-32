@@ -33,7 +33,9 @@ require_once 'inc/lock.php';
     $stmt = mysqli_prepare($conn, $query);
 
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "ssssss", $_POST['name'], $_POST['address'], $_POST['suburb'], $_POST['postcode'], $_POST['state'], $_POST['email']);
+        mysqli_stmt_bind_param($stmt, "ssssss", htmlspecialchars($_POST['name']), htmlspecialchars($_POST['address']), 
+        htmlspecialchars($_POST['suburb']), htmlspecialchars($_POST['postcode']), htmlspecialchars($_POST['state']), 
+        htmlspecialchars($_POST['email']));
 
         mysqli_stmt_execute($stmt);
 
@@ -45,14 +47,15 @@ require_once 'inc/lock.php';
     $stmt = mysqli_prepare($conn, $cardquery);
 
     if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "sssss", crypt($_POST['cardno'], $salt), $_POST['cardname'], $_POST['month'], $_POST['year'], crypt($_POST['cvv'], $salt));
+        mysqli_stmt_bind_param($stmt, "sssss", htmlspecialchars(crypt($_POST['cardno'], $salt)), htmlspecialchars($_POST['cardname']),
+        htmlspecialchars($_POST['month']), htmlspecialchars($_POST['year']), htmlspecialchars(crypt($_POST['cvv'], $salt)));
 
         mysqli_stmt_execute($stmt);
 
         mysqli_stmt_close($stmt);
     }
 
-    $cust = $_POST['name'];
+    $cust = htmlspecialchars($_POST['name']);
     $sql = "SELECT * FROM customer WHERE name = '$cust'";
 
     if ($result = mysqli_query($conn, $sql)) {
