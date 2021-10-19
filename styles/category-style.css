@@ -52,6 +52,13 @@
   text-decoration: none;
 }
 
+p.flex-container :hover {
+  background-color: rgba(136, 41, 41, 0.849);
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(37, 141, 12);
+}
+
 .flex-container .categoryPage-productInformationCard :hover {
   background-color: rgba(136, 41, 41, 0);
   
@@ -84,6 +91,9 @@
   font-weight: bold;
   text-decoration: none;
   margin-bottom: 0px;
+  max-width: 125px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container {
