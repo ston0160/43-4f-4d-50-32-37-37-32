@@ -1,16 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        let x = Math.floor((Math.random() * 10) + 1);
+    </script>
 
-$salt = md5('jim');
-
-function hashCC($string, $salt)
-{
-    $string = crypt($string, $salt);
-}
-
-echo 'hashCC = ';
-//echo hashCC("A212 1212 1212 1212", $salt);
-echo crypt('1212 1212 1212 1212', $salt);
-
-echo '<br>';
-echo 'Naked = ';
-echo $salt;
+    <?php
+        $salt = md5(x);
+    ?>
+</html>
