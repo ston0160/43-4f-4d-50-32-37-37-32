@@ -4,7 +4,7 @@
 <head>
   <title>Product Page | Star Wars Collectables</title>
   <meta charset="UTF-8">
-  <meta name="Richard" content="Star Wars">
+  <meta name="author" content="" >
   <link rel="stylesheet" href="styles/product-style.css" />
   <link rel="stylesheet" href="styles/header-nav-style.css">
   <link rel="stylesheet" href="styles/footer-style2.css">
