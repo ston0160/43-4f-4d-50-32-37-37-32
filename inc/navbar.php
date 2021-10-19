@@ -50,7 +50,7 @@
   <button class="menubtn" onclick="openNav()">☰ Menu</button>
   <script>
     function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("mySidebar").style.width = "290px";
       document.getElementById("menu").style.marginLeft = "250px";
     }
 

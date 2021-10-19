@@ -27,8 +27,10 @@ $_SESSION[$prodID] += $quantity;
     <link rel="stylesheet" href="styles/addtoCart-style.css">
     <link rel="stylesheet" href="styles/header-nav-style.css">
     <link rel="stylesheet" href="styles/footer-style2.css">
+    <title>Cart Confirmation | Star Wars Collectables</title>
+    <link rel="icon" href="images/favicon_starwars.png" type="image/png" />
     <script src="https://kit.fontawesome.com/646e59b3d4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    
 </head>
 
 <body>
