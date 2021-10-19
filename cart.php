@@ -94,8 +94,8 @@ require_once "inc/dbconn.php";
                 </h4>
                 <hr>
                 <?php if ($_SESSION['totalItems'] < 1 ) {
-                    echo "<br><h4>A disturbance in the force I feel...</h4>";
-                    echo "<h4>No items in your cart there are.</h4><br>";
+                    echo '<br><h5><i>"A disturbance in the force I feel..."</i></h5>';
+                    echo '<h5><i>"No items in your cart there are."</i></h5><br>';
                 }
                 ?>
                 <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
