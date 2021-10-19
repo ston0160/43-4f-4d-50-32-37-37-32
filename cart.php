@@ -61,6 +61,16 @@ require_once "inc/dbconn.php";
                                     </div>
                                     <div class="item-sub column-20vh">
                                         <h2>AUD$ <?php echo ($product['price'] * $val);  ?></h2>
+                                        <form action="removeFromCart.php" method="GET">
+                                            <div>
+                                                <div>
+                                                    <p><button class="remove-button" type="submit">Remove</button></p>
+                                                </div>
+                                                <div class="cart-quantityInput">
+                                                    <input id="hideme" name="prodID" value=<?php echo "$product[prodID]"; ?>>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                 <?php
@@ -83,6 +93,11 @@ require_once "inc/dbconn.php";
                     </span>
                 </h4>
                 <hr>
+                <?php if ($_SESSION['totalItems'] < 1 ) {
+                    echo "<br><h4>A disturbance in the force I feel...</h4>";
+                    echo "<h4>No items in your cart there are.</h4><br>";
+                }
+                ?>
                 <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
                 <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
             </div>
