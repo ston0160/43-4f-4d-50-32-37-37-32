@@ -99,7 +99,15 @@ require_once "inc/dbconn.php";
                 }
                 ?>
                 <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
+                <?php
+                if ($totalItems > 0) {
+                ?>
                 <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
+                <?php
+                } else {
+                    echo "<div id='submit-button-Dead' class='btn-Dead'><div id='noCheckout'>CHECKOUT</div></div>";
+                }
+                ?>
             </div>
         </div>
     </div>
