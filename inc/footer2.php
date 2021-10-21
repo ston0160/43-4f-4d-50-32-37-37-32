@@ -4,7 +4,7 @@
     <div class="footer-row">
       <div class="column-50">
         <h6>About Our Website</h6>
-        <p class="text-justify">This website is a functional eCommerce Solutions website submitted for grading for the Topic COMP2772 Web-Based Systems Development under the coordination of Professor Richard Leibrandt. The members of the group consist of Illya Seshin, Cody Slattery, Richard Stone Reyes and Jim Labilles.</p>
+        <p class="text-justify">This website is a functional eCommerce Solutions website submitted for grading for the Topic COMP2772 Web-Based Systems Development under the coordination of Professor Richard Leibrandt. The members of the group consist of Illia Sheshyn, Cody Slattery, Richard Stone Reyes and Jim Labilles.</p>
       </div>
 
       <div class="column-25">
@@ -25,7 +25,7 @@
           <li><a href="cart.php">Cart Page</a></li>
           <li><a href="product.php?id=One">Product Page (Example)</a></li>
           <li><a href="checkout.php">Checkout</a></li>
-          <li><a href="#">Sitemap</a></li>
+          <li><a href="about.php">About Us</a></li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,7 @@
     <div class="footer-row">
       <div class="column-50">
         <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
-          <a href="aboutUs.php">GROUP-20 (the 'authors')</a>.
+          <a href="about.php">GROUP-20 (the 'authors')</a>.
         </p>
       </div>
       <div class="column-25">
@@ -44,9 +44,9 @@
 
       <div class="column-25">
         <ul class="social-icons">
-          <li><a class="facebook" href="https://www.facebook.com/cachenlo"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="twitter" href="https://www.facebook.com/cachenlo"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="linkedin" href="https://www.facebook.com/cachenlo"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="facebook" href="https://www.facebook.com/StarWarsCollectablesAU"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/StarWarsAUD"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
     </div>

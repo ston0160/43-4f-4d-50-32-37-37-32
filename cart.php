@@ -61,6 +61,16 @@ require_once "inc/dbconn.php";
                                     </div>
                                     <div class="item-sub column-20vh">
                                         <h2>AUD$ <?php echo ($product['price'] * $val);  ?></h2>
+                                        <form action="removeFromCart.php" method="GET">
+                                            <div>
+                                                <div>
+                                                    <p><button class="remove-button" type="submit">Remove</button></p>
+                                                </div>
+                                                <div class="cart-quantityInput">
+                                                    <input id="hideme" name="prodID" value=<?php echo "$product[prodID]"; ?>>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                 <?php
@@ -83,8 +93,21 @@ require_once "inc/dbconn.php";
                     </span>
                 </h4>
                 <hr>
+                <?php if ($_SESSION['totalItems'] < 1 ) {
+                    echo '<br><h5><i>"A disturbance in the force I feel..."</i></h5>';
+                    echo '<h5><i>"No items in your cart there are."</i></h5><br>';
+                }
+                ?>
                 <p class="total-price"><b style="color:white; font-size: 20px;">Total Price </b><span class="price" style="color:white; font-size: 20px;"><b>AUD$ <?php echo $_SESSION['total']; ?></b></span></p>
+                <?php
+                if ($totalItems > 0) {
+                ?>
                 <button onclick="window.location.href='checkout.php'" id="submit-button" type="submit" value="Place Order" class="btn-one">CHECKOUT</button>
+                <?php
+                } else {
+                    echo "<div id='submit-button-Dead' class='btn-Dead'><div id='noCheckout'>CHECKOUT</div></div>";
+                }
+                ?>
             </div>
         </div>
     </div>
