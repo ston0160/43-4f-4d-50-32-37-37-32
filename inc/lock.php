@@ -1,6 +1,6 @@
 <?php
 
-$salt = md5('jim');
+$salt = random_bytes(5);;
 
 function hashCC($string, $salt)
 {
@@ -8,7 +8,7 @@ function hashCC($string, $salt)
 }
 
 echo 'hashCC = ';
-//echo hashCC("A212 1212 1212 1212", $salt);
+//echo hashCC("1212 1212 1212 1212", $salt);
 echo crypt('1212 1212 1212 1212', $salt);
 
 echo '<br>';
