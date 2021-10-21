@@ -36,7 +36,7 @@
                             <label class="details" for="name"> Full Name</label>
                             <input class="details" type="text" id="name" name="name" placeholder="Scott Morrison" required>
                             <label class="details" for="email"> Email</label>
-                            <input class="details" type="text" id="email" name="email" placeholder="scott@yourpm.com" required>
+                            <input class="details" type="email" id="email" name="email" placeholder="scott@yourpm.com" required>
                             <label class="details" for="adr"> Address</label>
                             <input class="details" type="text" id="address" name="address" placeholder="101 Parliament House" required>
                             <label class="details" for="suburb"> Suburb</label>
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="column-50vh">
                                     <label class="details" for="postcode">Post Code</label>
-                                    <input class="details" type="text" id="postcode" name="postcode" placeholder="9000" required>
+                                    <input class="details" type="text" id="postcode" name="postcode" placeholder="9000" minlength="4" maxlength="4" required>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,8 @@
                             <label class="details" for="cardname">Name on Card</label>
                             <input class="details" type="text" id="cardname" name="cardname" placeholder="Scott Morrison" required>
                             <label class="details" for="cardno">Credit card number</label>
-                            <input class="details" type="text" id="cardno" name="cardno" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                            <input class="details" type="tel" id="cardno" name="cardno" placeholder="xxxx-xxxx-xxxx-xxxx" inputmode="numeric"
+                            pattern="[0-9\s]{16,19}" maxlength="19" required>
 
 
                             <div class="row-inner">
@@ -110,7 +111,7 @@
                                 </div>
                             </div>
                             <label class="details" for="cvv">CVV</label>
-                            <input class="details" type="text" id="cvv" name="cvv" placeholder="xxx" required>
+                            <input class="details" type="text" id="cvv" name="cvv" placeholder="xxx" minlength="3" maxlength="3" required>
 
                         </div>
                     </div>
