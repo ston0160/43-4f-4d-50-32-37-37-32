@@ -1,3 +1,5 @@
 <?php
 
-$salt = random_bytes(5);;
+$salt = random_bytes(5);
+
+?>
