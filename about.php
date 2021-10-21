@@ -49,7 +49,7 @@
       <div class="aboutUs-profileContent">
           <h4><b>Name: </b>Aljim Labilles</h4>
           <h4>FAN: (LABI0008)</h4>
-          <p>"My name is Jim and I like doing things"</p>
+          <p>"I am passionate about my work and looking to challenge myself"</p>
      </div>
 </div>
 </div>
@@ -61,7 +61,7 @@
       <div class="aboutUs-profileContent">
           <h4><b>Name: </b>Cody Slattery</h4>
           <h4>FAN: (SLAT0134)</h4>
-          <p>"My name is Cody and I also like doing things"</p>
+          <p>"One of my passions is to explore and going to trips"</p>
      </div>
 </div>
 </div>
@@ -73,7 +73,7 @@
       <div class="aboutUs-profileContent">
           <h4><b>Name: </b>Illia Sheshyn</h4>
           <h4>FAN: (SHES0003)</h4>
-          <p>"My name is Illia and I like learning about IT"</p>
+          <p>"I'm interested in learning IT, especially in the A.I. area"</p>
      </div>
 </div>
 </div>
@@ -85,7 +85,7 @@
       <div class="aboutUs-profileContent">
           <h4><b>Name: </b>Richard Stone Reyes</h4>
           <h4>FAN: (STON0160)</h4>
-          <p>"My name is Richard and I need to finish building this page"</p>
+          <p>"I'm always interested in learning new things. I also got a passion for soccer"</p>
      </div>
 </div>
   </div>
