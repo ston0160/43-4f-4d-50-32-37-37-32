@@ -2,7 +2,7 @@
     <footer>
       <div class="footer-content">
         <h3>STARWARS</h3>
-        <p>A website project by Illya, Cody, Richard & Jim</p>
+        <p>A website project by Illia, Cody, Richard & Jim</p>
         <ul class="socials">
           <li>
             <a href="#"><i class="fab fa-twitter-square"></i></a>
